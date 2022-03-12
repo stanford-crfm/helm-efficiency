@@ -1,3 +1,3 @@
-[submodule "megatron"]
-	path = megatron
-	url = https://github.com/NVIDIA/Megatron-LM
+[submodule "megatron_lm"]
+	path = megatron_lm
+	url = https://github.com/nvidia/megatron-lm
