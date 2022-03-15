@@ -92,7 +92,8 @@ if __name__ == "__main__":
                                                    tokens_to_generate=num_output_tokens,
                                                    temperature=args.temperature,
                                                    top_k_sampling=args.top_k,
-                                                   top_p_sampling=args.top_p)
+                                                   top_p_sampling=args.top_p,
+                                                   use_eod_token_for_early_termination=False)
             runtime = (time.time() - start_time) / num_iterations
 
             if torch.distributed.get_rank() == 0:
