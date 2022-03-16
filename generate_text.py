@@ -27,6 +27,7 @@ from megatron.model import GPTModel
 from megatron.training import get_model
 from megatron.text_generation import generate_and_post_process
 
+import numpy as np
 import time
 import torch
 
@@ -84,6 +85,8 @@ if __name__ == "__main__":
         with open(args.prompts_file, 'r') as f:
             prompts = [f.read()[:10*num_input_tokens]]  # Hack to prevent tokenization from taking too long.
         for num_output_tokens in args.all_num_output_tokens:
+            times = []
+            last_start_time = time.time()
             for i in range(num_warmup_iterations + num_iterations):
                 if i == num_warmup_iterations:
                     start_time = time.time()
@@ -94,8 +97,10 @@ if __name__ == "__main__":
                                                    top_k_sampling=args.top_k,
                                                    top_p_sampling=args.top_p,
                                                    use_eod_token_for_early_termination=False)
+                times.append(time.time() - last_start_time)
+                last_start_time = time.time()
             runtime = (time.time() - start_time) / num_iterations
 
             if torch.distributed.get_rank() == 0:
                 label = {'num_input_tokens': num_input_tokens, 'num_output_tokens': num_output_tokens}
-                print(f"Runtime for {label}: {runtime:.3f} seconds")
+                print(f"Runtime for {label}: {runtime:.3f} seconds +- {np.std(times[num_warmup_iterations:]):.3f}")
