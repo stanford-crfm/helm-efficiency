@@ -12,246 +12,7 @@ Persistent fused layer norm kernel is supported from pytorch v1.11 (nvidia pytor
   adam_eps ........................................ 1e-08
   adlr_autoresume ................................. False
   adlr_autoresume_interval ........................ 1000
-  all_num_input_tokens ............................ [1, 16, 256]
-  all_num_output_tokens ........................... [0, 1, 2, 4, 8, 12, 16, 24, 32, 48, 64]
-  apply_query_key_layer_scaling ................... True
-  apply_residual_connection_post_layernorm ........ False
-  attention_dropout ............................... 0.1
-  attention_softmax_in_fp32 ....................... False
-  bert_binary_head ................................ True
-  bert_load ....................................... None
-  bf16 ............................................ False
-  bias_dropout_fusion ............................. True
-  bias_gelu_fusion ................................ True
-  biencoder_projection_dim ........................ 0
-  biencoder_shared_query_context_model ............ False
-  block_data_path ................................. None
-  classes_fraction ................................ 1.0
-  clip_grad ....................................... 1.0
-  consumed_train_samples .......................... 0
-  consumed_valid_samples .......................... 0
-  data_impl ....................................... infer
-  data_parallel_random_init ....................... False
-  data_parallel_size .............................. 1
-  data_path ....................................... None
-  data_per_class_fraction ......................... 1.0
-  data_sharding ................................... True
-  dataloader_type ................................. single
-  DDP_impl ........................................ local
-  decoder_seq_length .............................. None
-  distribute_checkpointed_activations ............. False
-  distributed_backend ............................. nccl
-  embedding_path .................................. None
-  empty_unused_memory_level ....................... 0
-  encoder_seq_length .............................. 1024
-  eod_mask_loss ................................... False
-  eval_interval ................................... 1000
-  eval_iters ...................................... 100
-  evidence_data_path .............................. None
-  exit_duration_in_mins ........................... None
-  exit_interval ................................... None
-  exit_signal_handler ............................. False
-  ffn_hidden_size ................................. 4096
-  finetune ........................................ False
-  fp16 ............................................ True
-  fp16_lm_cross_entropy ........................... False
-  fp32_residual_connection ........................ False
-  global_batch_size ............................... 1
-  hidden_dropout .................................. 0.1
-  hidden_size ..................................... 1024
-  hysteresis ...................................... 2
-  ict_head_size ................................... None
-  ict_load ........................................ None
-  img_h ........................................... 224
-  img_w ........................................... 224
-  indexer_batch_size .............................. 128
-  indexer_log_interval ............................ 1000
-  inference_batch_times_seqlen_threshold .......... 512
-  init_method_std ................................. 0.02
-  init_method_xavier_uniform ...................... False
-  initial_loss_scale .............................. 4294967296
-  kv_channels ..................................... 64
-  layernorm_epsilon ............................... 1e-05
-  lazy_mpu_init ................................... None
-  load ............................................ None
-  local_rank ...................................... 0
-  log_batch_size_to_tensorboard ................... False
-  log_interval .................................... 100
-  log_learning_rate_to_tensorboard ................ True
-  log_loss_scale_to_tensorboard ................... True
-  log_memory_to_tensorboard ....................... False
-  log_num_zeros_in_grad ........................... False
-  log_params_norm ................................. False
-  log_timers_to_tensorboard ....................... False
-  log_validation_ppl_to_tensorboard ............... False
-  log_world_size_to_tensorboard ................... False
-  loss_scale ...................................... None
-  loss_scale_window ............................... 1000
-  lr .............................................. None
-  lr_decay_iters .................................. None
-  lr_decay_samples ................................ None
-  lr_decay_style .................................. linear
-  lr_warmup_fraction .............................. None
-  lr_warmup_iters ................................. 0
-  lr_warmup_samples ............................... 0
-  make_vocab_size_divisible_by .................... 128
-  mask_prob ....................................... 0.15
-  masked_softmax_fusion ........................... True
-  max_position_embeddings ......................... 1024
-  merge_file ...................................... data/gpt2/gpt2_merges.txt
-  micro_batch_size ................................ 1
-  min_loss_scale .................................. 1.0
-  min_lr .......................................... 0.0
-  mmap_warmup ..................................... False
-  no_async_tensor_model_parallel_allreduce ........ False
-  no_load_optim ................................... True
-  no_load_rng ..................................... True
-  no_persist_layer_norm ........................... True
-  no_save_optim ................................... None
-  no_save_rng ..................................... None
-  num_attention_heads ............................. 16
-  num_channels .................................... 3
-  num_classes ..................................... 1000
-  num_layers ...................................... 24
-  num_layers_per_virtual_pipeline_stage ........... None
-  num_workers ..................................... 2
-  onnx_safe ....................................... None
-  openai_gelu ..................................... False
-  optimizer ....................................... adam
-  out_seq_length .................................. 1024
-  override_lr_scheduler ........................... False
-  params_dtype .................................... torch.float16
-  patch_dim ....................................... 16
-  pipeline_model_parallel_size .................... 1
-  pipeline_model_parallel_split_rank .............. None
-  prompts_file .................................... data/alice_in_wonderland.txt
-  query_in_block_prob ............................. 0.1
-  rampup_batch_size ............................... None
-  rank ............................................ 0
-  reset_attention_mask ............................ False
-  reset_position_ids .............................. False
-  retriever_report_topk_accuracies ................ []
-  retriever_score_scaling ......................... False
-  retriever_seq_length ............................ 256
-  sample_rate ..................................... 1.0
-  save ............................................ None
-  save_interval ................................... None
-  scatter_gather_tensors_in_pipeline .............. True
-  seed ............................................ 42
-  seq_length ...................................... 1024
-  sgd_momentum .................................... 0.9
-  short_seq_prob .................................. 0.1
-  split ........................................... 969, 30, 1
-  temperature ..................................... 1.0
-  tensor_model_parallel_size ...................... 1
-  tensorboard_dir ................................. None
-  tensorboard_log_interval ........................ 1
-  tensorboard_queue_size .......................... 1000
-  titles_data_path ................................ None
-  tokenizer_type .................................. GPT2BPETokenizer
-  top_k ........................................... 0
-  top_p ........................................... 0.9
-  train_iters ..................................... None
-  train_samples ................................... None
-  use_checkpoint_lr_scheduler ..................... False
-  use_contiguous_buffers_in_local_ddp ............. True
-  use_cpu_initialization .......................... None
-  use_one_sent_docs ............................... False
-  virtual_pipeline_model_parallel_size ............ None
-  vocab_extra_ids ................................. 0
-  vocab_file ...................................... data/gpt2/gpt2_vocab.json
-  weight_decay .................................... 0.01
-  world_size ...................................... 1
--------------------- end of arguments ---------------------
-setting number of micro-batches to constant 1
-> building GPT2BPETokenizer tokenizer ...
- > padded vocab (size: 50257) with 47 dummy tokens (new size: 50304)
-> initializing torch distributed ...
-> initializing tensor model parallel with size 1
-> initializing pipeline model parallel with size 1
-> setting random seeds to 42 ...
-> initializing model parallel cuda seeds on global rank 0, model parallel rank 0, and data parallel rank 0 with model parallel seed: 2760 and data parallel seed: 42
-> compiling dataset index builder ...
-make: Entering directory '/lfs/1/deepak/benchmarking/megatron_lm/megatron/data'
-make: Nothing to be done for 'default'.
-make: Leaving directory '/lfs/1/deepak/benchmarking/megatron_lm/megatron/data'
->>> done with dataset index builder. Compilation time: 0.150 seconds
-> compiling and loading fused kernels ...
-Detected CUDA files, patching ldflags
-Emitting ninja build file /lfs/1/deepak/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
-Building extension module scaled_upper_triang_masked_softmax_cuda...
-Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-ninja: no work to do.
-Loading extension module scaled_upper_triang_masked_softmax_cuda...
-Detected CUDA files, patching ldflags
-Emitting ninja build file /lfs/1/deepak/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
-Building extension module scaled_masked_softmax_cuda...
-Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-ninja: no work to do.
-Loading extension module scaled_masked_softmax_cuda...
-Detected CUDA files, patching ldflags
-Emitting ninja build file /lfs/1/deepak/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
-Building extension module scaled_softmax_cuda...
-Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-ninja: no work to do.
-Loading extension module scaled_softmax_cuda...
-Detected CUDA files, patching ldflags
-Emitting ninja build file /lfs/1/deepak/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
-Building extension module fused_mix_prec_layer_norm_cuda...
-Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-ninja: no work to do.
-Loading extension module fused_mix_prec_layer_norm_cuda...
->>> done with compiling and loading fused kernels. Compilation time: 0.912 seconds
-building GPT model ...
- > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 354871296
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 0}: 0.019 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 1}: 0.024 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 2}: 0.045 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 4}: 0.076 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 8}: 0.150 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 12}: 0.221 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 16}: 0.298 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 24}: 0.447 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 32}: 0.590 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 48}: 0.880 seconds
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 64}: 1.169 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 0}: 0.020 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 1}: 0.021 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 2}: 0.040 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 4}: 0.077 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 8}: 0.150 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 12}: 0.226 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 16}: 0.296 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 24}: 0.448 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 32}: 0.585 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 48}: 0.886 seconds
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 64}: 1.152 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 0}: 0.020 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 1}: 0.022 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 2}: 0.040 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 4}: 0.076 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 8}: 0.152 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 12}: 0.226 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 16}: 0.299 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 24}: 0.441 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 32}: 0.597 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 48}: 0.874 seconds
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 64}: 1.194 seconds
-using world size: 1, data-parallel-size: 1, tensor-model-parallel size: 1, pipeline-model-parallel size: 1 
-WARNING: overriding default arguments for tokenizer_type:GPT2BPETokenizer                        with tokenizer_type:GPT2BPETokenizer
-setting global batch size to 1
-using torch.float16 for parameters ...
-Persistent fused layer norm kernel is supported from pytorch v1.11 (nvidia pytorch container paired with v1.11). Defaulting to no_persist_layer_norm=True
------------------------- arguments ------------------------
-  accumulate_allreduce_grads_in_fp32 .............. False
-  activations_checkpoint_method ................... None
-  activations_checkpoint_num_layers ............... 1
-  adam_beta1 ...................................... 0.9
-  adam_beta2 ...................................... 0.999
-  adam_eps ........................................ 1e-08
-  adlr_autoresume ................................. False
-  adlr_autoresume_interval ........................ 1000
-  all_num_input_tokens ............................ [32, 64, 128, 192, 320, 384, 428, 472, 512]
+  all_num_input_tokens ............................ [1, 16, 32, 64, 128, 192, 256, 320, 384, 428, 472, 512]
   all_num_output_tokens ........................... [0, 1, 2, 4, 8, 12, 16, 24, 32, 48, 64]
   apply_query_key_layer_scaling ................... True
   apply_residual_connection_post_layernorm ........ False
@@ -414,138 +175,164 @@ setting number of micro-batches to constant 1
 make: Entering directory '/future/u/keshav2/benchmarking/megatron_lm/megatron/data'
 make: Nothing to be done for 'default'.
 make: Leaving directory '/future/u/keshav2/benchmarking/megatron_lm/megatron/data'
->>> done with dataset index builder. Compilation time: 0.156 seconds
+>>> done with dataset index builder. Compilation time: 0.315 seconds
 > compiling and loading fused kernels ...
 Detected CUDA files, patching ldflags
 Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
 Building extension module scaled_upper_triang_masked_softmax_cuda...
 Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-[1/2] /usr/local/cuda/bin/nvcc -DTORCH_EXTENSION_NAME=scaled_upper_triang_masked_softmax_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -isystem /opt/conda/lib/python3.8/site-packages/torch/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/TH -isystem /opt/conda/lib/python3.8/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /opt/conda/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_80,code=sm_80 --compiler-options '-fPIC' -O3 -gencode arch=compute_70,code=sm_70 --use_fast_math -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda -gencode arch=compute_80,code=sm_80 -std=c++14 -c /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/scaled_upper_triang_masked_softmax_cuda.cu -o scaled_upper_triang_masked_softmax_cuda.cuda.o 
-[2/2] c++ scaled_upper_triang_masked_softmax.o scaled_upper_triang_masked_softmax_cuda.cuda.o -shared -L/opt/conda/lib/python3.8/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda/lib64 -lcudart -o scaled_upper_triang_masked_softmax_cuda.so
+ninja: no work to do.
 Loading extension module scaled_upper_triang_masked_softmax_cuda...
 Detected CUDA files, patching ldflags
 Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
 Building extension module scaled_masked_softmax_cuda...
 Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-[1/3] c++ -MMD -MF scaled_masked_softmax.o.d -DTORCH_EXTENSION_NAME=scaled_masked_softmax_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -isystem /opt/conda/lib/python3.8/site-packages/torch/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/TH -isystem /opt/conda/lib/python3.8/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /opt/conda/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=1 -fPIC -std=c++14 -O3 -c /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/scaled_masked_softmax.cpp -o scaled_masked_softmax.o 
-[2/3] /usr/local/cuda/bin/nvcc -DTORCH_EXTENSION_NAME=scaled_masked_softmax_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -isystem /opt/conda/lib/python3.8/site-packages/torch/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/TH -isystem /opt/conda/lib/python3.8/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /opt/conda/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_80,code=sm_80 --compiler-options '-fPIC' -O3 -gencode arch=compute_70,code=sm_70 --use_fast_math -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda -gencode arch=compute_80,code=sm_80 -std=c++14 -c /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/scaled_masked_softmax_cuda.cu -o scaled_masked_softmax_cuda.cuda.o 
-[3/3] c++ scaled_masked_softmax.o scaled_masked_softmax_cuda.cuda.o -shared -L/opt/conda/lib/python3.8/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda/lib64 -lcudart -o scaled_masked_softmax_cuda.so
+ninja: no work to do.
 Loading extension module scaled_masked_softmax_cuda...
 Detected CUDA files, patching ldflags
 Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
 Building extension module scaled_softmax_cuda...
 Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-[1/3] c++ -MMD -MF scaled_softmax.o.d -DTORCH_EXTENSION_NAME=scaled_softmax_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -isystem /opt/conda/lib/python3.8/site-packages/torch/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/TH -isystem /opt/conda/lib/python3.8/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /opt/conda/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=1 -fPIC -std=c++14 -O3 -c /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/scaled_softmax.cpp -o scaled_softmax.o 
-[2/3] /usr/local/cuda/bin/nvcc -DTORCH_EXTENSION_NAME=scaled_softmax_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -isystem /opt/conda/lib/python3.8/site-packages/torch/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/TH -isystem /opt/conda/lib/python3.8/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /opt/conda/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_80,code=sm_80 --compiler-options '-fPIC' -O3 -gencode arch=compute_70,code=sm_70 --use_fast_math -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda -gencode arch=compute_80,code=sm_80 -std=c++14 -c /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/scaled_softmax_cuda.cu -o scaled_softmax_cuda.cuda.o 
-[3/3] c++ scaled_softmax.o scaled_softmax_cuda.cuda.o -shared -L/opt/conda/lib/python3.8/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda/lib64 -lcudart -o scaled_softmax_cuda.so
+ninja: no work to do.
 Loading extension module scaled_softmax_cuda...
 Detected CUDA files, patching ldflags
 Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
 Building extension module fused_mix_prec_layer_norm_cuda...
 Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
-[1/3] /usr/local/cuda/bin/nvcc -DTORCH_EXTENSION_NAME=fused_mix_prec_layer_norm_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -isystem /opt/conda/lib/python3.8/site-packages/torch/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/TH -isystem /opt/conda/lib/python3.8/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /opt/conda/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_80,code=sm_80 --compiler-options '-fPIC' -O3 -gencode arch=compute_70,code=sm_70 --use_fast_math -maxrregcount=50 -gencode arch=compute_80,code=sm_80 -std=c++14 -c /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/layer_norm_cuda_kernel.cu -o layer_norm_cuda_kernel.cuda.o 
-[2/3] c++ -MMD -MF layer_norm_cuda.o.d -DTORCH_EXTENSION_NAME=fused_mix_prec_layer_norm_cuda -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -isystem /opt/conda/lib/python3.8/site-packages/torch/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /opt/conda/lib/python3.8/site-packages/torch/include/TH -isystem /opt/conda/lib/python3.8/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /opt/conda/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=1 -fPIC -std=c++14 -O3 -c /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/layer_norm_cuda.cpp -o layer_norm_cuda.o 
-[3/3] c++ layer_norm_cuda.o layer_norm_cuda_kernel.cuda.o -shared -L/opt/conda/lib/python3.8/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda/lib64 -lcudart -o fused_mix_prec_layer_norm_cuda.so
+ninja: no work to do.
 Loading extension module fused_mix_prec_layer_norm_cuda...
->>> done with compiling and loading fused kernels. Compilation time: 167.811 seconds
+>>> done with compiling and loading fused kernels. Compilation time: 1.564 seconds
 building GPT model ...
  > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 354871296
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 0}: 0.020 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 1}: 0.020 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 2}: 0.040 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 4}: 0.077 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 8}: 0.151 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 12}: 0.224 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 16}: 0.300 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 24}: 0.448 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 32}: 0.591 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 48}: 0.878 seconds
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 64}: 1.145 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 0}: 0.019 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 1}: 0.022 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 2}: 0.039 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 4}: 0.075 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 8}: 0.149 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 12}: 0.223 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 16}: 0.296 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 24}: 0.443 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 32}: 0.590 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 48}: 0.884 seconds
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 64}: 1.179 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 0}: 0.020 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 1}: 0.021 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 2}: 0.039 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 4}: 0.076 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 8}: 0.150 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 12}: 0.223 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 16}: 0.296 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 24}: 0.443 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 32}: 0.590 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 48}: 0.884 seconds
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 64}: 1.178 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 0}: 0.018 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 1}: 0.019 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 2}: 0.038 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 4}: 0.075 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 8}: 0.148 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 12}: 0.222 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 16}: 0.295 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 24}: 0.443 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 32}: 0.589 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 48}: 0.883 seconds
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 64}: 1.179 seconds
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 0}: 0.019 seconds
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 1}: 0.020 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 2}: 0.039 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 4}: 0.076 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 8}: 0.151 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 12}: 0.225 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 16}: 0.294 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 24}: 0.448 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 32}: 0.586 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 48}: 0.883 seconds
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 64}: 1.127 seconds
-Runtime for {'num_input_tokens': 128, 'num_output_tokens': 0}: 0.020 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 2}: 0.038 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 4}: 0.075 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 8}: 0.149 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 12}: 0.222 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 16}: 0.295 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 24}: 0.443 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 32}: 0.590 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 48}: 0.886 seconds
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 64}: 1.179 seconds
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 0}: 0.019 seconds
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 1}: 0.021 seconds
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 2}: 0.039 seconds
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 4}: 0.076 seconds
-Runtime for {'num_input_tokens': 128, 'num_output_tokens': 8}: 0.151 seconds
-Runtime for {'num_input_tokens': 128, 'num_output_tokens': 12}: 0.222 seconds
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 8}: 0.149 seconds
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 12}: 0.223 seconds
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 16}: 0.297 seconds
-Runtime for {'num_input_tokens': 128, 'num_output_tokens': 24}: 0.440 seconds
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 24}: 0.445 seconds
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 32}: 0.592 seconds
-Runtime for {'num_input_tokens': 128, 'num_output_tokens': 48}: 0.879 seconds
-Runtime for {'num_input_tokens': 128, 'num_output_tokens': 64}: 1.188 seconds
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 48}: 0.886 seconds
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 64}: 1.178 seconds
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 0}: 0.020 seconds
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 1}: 0.021 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 2}: 0.040 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 4}: 0.077 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 8}: 0.151 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 12}: 0.226 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 16}: 0.300 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 24}: 0.448 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 32}: 0.574 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 48}: 0.869 seconds
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 64}: 1.148 seconds
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 0}: 0.021 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 2}: 0.039 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 4}: 0.076 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 8}: 0.150 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 12}: 0.223 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 16}: 0.297 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 24}: 0.444 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 32}: 0.592 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 48}: 0.886 seconds
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 64}: 1.179 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 0}: 0.020 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 1}: 0.021 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 2}: 0.040 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 4}: 0.077 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 8}: 0.150 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 12}: 0.227 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 16}: 0.301 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 24}: 0.451 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 32}: 0.602 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 48}: 0.900 seconds
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 64}: 1.198 seconds
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 0}: 0.022 seconds
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 1}: 0.023 seconds
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 2}: 0.041 seconds
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 4}: 0.078 seconds
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 8}: 0.152 seconds
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 8}: 0.153 seconds
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 12}: 0.227 seconds
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 16}: 0.296 seconds
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 24}: 0.450 seconds
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 32}: 0.585 seconds
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 48}: 0.858 seconds
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 64}: 1.158 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 0}: 0.022 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 1}: 0.023 seconds
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 16}: 0.302 seconds
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 24}: 0.452 seconds
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 32}: 0.602 seconds
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 48}: 0.899 seconds
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 64}: 1.192 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 0}: 0.023 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 1}: 0.024 seconds
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 2}: 0.042 seconds
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 4}: 0.079 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 8}: 0.151 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 12}: 0.226 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 16}: 0.302 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 24}: 0.437 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 32}: 0.599 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 48}: 0.872 seconds
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 64}: 1.127 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 8}: 0.154 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 12}: 0.229 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 16}: 0.304 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 24}: 0.454 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 32}: 0.603 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 48}: 0.902 seconds
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 64}: 1.199 seconds
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 0}: 0.023 seconds
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 1}: 0.024 seconds
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 2}: 0.043 seconds
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 4}: 0.080 seconds
-Runtime for {'num_input_tokens': 428, 'num_output_tokens': 8}: 0.154 seconds
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 8}: 0.155 seconds
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 12}: 0.229 seconds
-Runtime for {'num_input_tokens': 428, 'num_output_tokens': 16}: 0.303 seconds
-Runtime for {'num_input_tokens': 428, 'num_output_tokens': 24}: 0.452 seconds
-Runtime for {'num_input_tokens': 428, 'num_output_tokens': 32}: 0.601 seconds
-Runtime for {'num_input_tokens': 428, 'num_output_tokens': 48}: 0.890 seconds
-Runtime for {'num_input_tokens': 428, 'num_output_tokens': 64}: 1.117 seconds
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 16}: 0.304 seconds
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 24}: 0.454 seconds
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 32}: 0.603 seconds
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 48}: 0.900 seconds
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 64}: 1.202 seconds
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 0}: 0.023 seconds
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 1}: 0.024 seconds
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 2}: 0.043 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 4}: 0.079 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 8}: 0.154 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 12}: 0.228 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 16}: 0.303 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 24}: 0.445 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 32}: 0.589 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 48}: 0.897 seconds
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 64}: 1.179 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 4}: 0.080 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 8}: 0.155 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 12}: 0.229 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 16}: 0.304 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 24}: 0.454 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 32}: 0.604 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 48}: 0.901 seconds
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 64}: 1.199 seconds
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 0}: 0.023 seconds
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 1}: 0.024 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 2}: 0.043 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 4}: 0.080 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 8}: 0.154 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 12}: 0.226 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 16}: 0.290 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 24}: 0.451 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 32}: 0.577 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 48}: 0.864 seconds
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 64}: 1.162 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 2}: 0.042 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 4}: 0.079 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 8}: 0.153 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 12}: 0.227 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 16}: 0.301 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 24}: 0.448 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 32}: 0.597 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 48}: 0.890 seconds
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 64}: 1.203 seconds
