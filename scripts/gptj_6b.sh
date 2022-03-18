@@ -29,5 +29,5 @@ python -u -m torch.distributed.launch $DISTRIBUTED_ARGS generate_text.py   \
        --top-p 0.9  \
        --seed 42  \
        --prompts-file data/alice_in_wonderland.txt  \
-       --all-num-output-tokens 0 1 2 4 8 12 16 24 32 48 64  \
+       --all-num-output-tokens 1 2 4 8 12 16 24 32 48 64  \
        --all-num-input-tokens 1 16 32 64 128 192 256 320 384 428 472 512

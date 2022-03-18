@@ -204,7 +204,6 @@ Loading extension module fused_mix_prec_layer_norm_cuda...
 >>> done with compiling and loading fused kernels. Compilation time: 0.322 seconds
 building GPT model ...
  > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 354871296
-Runtime for {'num_input_tokens': 1, 'num_output_tokens': 0}: 0.021 seconds +- 0.000
 Runtime for {'num_input_tokens': 1, 'num_output_tokens': 1}: 0.022 seconds +- 0.000
 Runtime for {'num_input_tokens': 1, 'num_output_tokens': 2}: 0.051 seconds +- 0.003
 Runtime for {'num_input_tokens': 1, 'num_output_tokens': 4}: 0.087 seconds +- 0.002
@@ -215,7 +214,6 @@ Runtime for {'num_input_tokens': 1, 'num_output_tokens': 24}: 0.489 seconds +- 0
 Runtime for {'num_input_tokens': 1, 'num_output_tokens': 32}: 0.647 seconds +- 0.002
 Runtime for {'num_input_tokens': 1, 'num_output_tokens': 48}: 0.979 seconds +- 0.020
 Runtime for {'num_input_tokens': 1, 'num_output_tokens': 64}: 1.303 seconds +- 0.031
-Runtime for {'num_input_tokens': 16, 'num_output_tokens': 0}: 0.023 seconds +- 0.000
 Runtime for {'num_input_tokens': 16, 'num_output_tokens': 1}: 0.024 seconds +- 0.000
 Runtime for {'num_input_tokens': 16, 'num_output_tokens': 2}: 0.044 seconds +- 0.001
 Runtime for {'num_input_tokens': 16, 'num_output_tokens': 4}: 0.087 seconds +- 0.001
@@ -226,7 +224,6 @@ Runtime for {'num_input_tokens': 16, 'num_output_tokens': 24}: 0.498 seconds +- 
 Runtime for {'num_input_tokens': 16, 'num_output_tokens': 32}: 0.656 seconds +- 0.012
 Runtime for {'num_input_tokens': 16, 'num_output_tokens': 48}: 0.973 seconds +- 0.013
 Runtime for {'num_input_tokens': 16, 'num_output_tokens': 64}: 1.297 seconds +- 0.013
-Runtime for {'num_input_tokens': 32, 'num_output_tokens': 0}: 0.021 seconds +- 0.000
 Runtime for {'num_input_tokens': 32, 'num_output_tokens': 1}: 0.022 seconds +- 0.000
 Runtime for {'num_input_tokens': 32, 'num_output_tokens': 2}: 0.043 seconds +- 0.001
 Runtime for {'num_input_tokens': 32, 'num_output_tokens': 4}: 0.084 seconds +- 0.002
@@ -237,7 +234,6 @@ Runtime for {'num_input_tokens': 32, 'num_output_tokens': 24}: 0.487 seconds +- 
 Runtime for {'num_input_tokens': 32, 'num_output_tokens': 32}: 0.650 seconds +- 0.006
 Runtime for {'num_input_tokens': 32, 'num_output_tokens': 48}: 0.975 seconds +- 0.014
 Runtime for {'num_input_tokens': 32, 'num_output_tokens': 64}: 1.296 seconds +- 0.010
-Runtime for {'num_input_tokens': 64, 'num_output_tokens': 0}: 0.022 seconds +- 0.000
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 1}: 0.024 seconds +- 0.000
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 2}: 0.044 seconds +- 0.000
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 4}: 0.084 seconds +- 0.001
@@ -248,7 +244,6 @@ Runtime for {'num_input_tokens': 64, 'num_output_tokens': 24}: 0.490 seconds +- 
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 32}: 0.691 seconds +- 0.071
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 48}: 0.996 seconds +- 0.032
 Runtime for {'num_input_tokens': 64, 'num_output_tokens': 64}: 1.296 seconds +- 0.014
-Runtime for {'num_input_tokens': 128, 'num_output_tokens': 0}: 0.023 seconds +- 0.000
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 1}: 0.024 seconds +- 0.000
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 2}: 0.044 seconds +- 0.001
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 4}: 0.087 seconds +- 0.002
@@ -259,7 +254,6 @@ Runtime for {'num_input_tokens': 128, 'num_output_tokens': 24}: 0.493 seconds +-
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 32}: 0.651 seconds +- 0.007
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 48}: 0.980 seconds +- 0.016
 Runtime for {'num_input_tokens': 128, 'num_output_tokens': 64}: 1.316 seconds +- 0.024
-Runtime for {'num_input_tokens': 192, 'num_output_tokens': 0}: 0.024 seconds +- 0.000
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 1}: 0.025 seconds +- 0.000
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 2}: 0.045 seconds +- 0.000
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 4}: 0.087 seconds +- 0.001
@@ -270,7 +264,6 @@ Runtime for {'num_input_tokens': 192, 'num_output_tokens': 24}: 0.492 seconds +-
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 32}: 0.654 seconds +- 0.009
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 48}: 0.978 seconds +- 0.010
 Runtime for {'num_input_tokens': 192, 'num_output_tokens': 64}: 1.340 seconds +- 0.098
-Runtime for {'num_input_tokens': 256, 'num_output_tokens': 0}: 0.026 seconds +- 0.000
 Runtime for {'num_input_tokens': 256, 'num_output_tokens': 1}: 0.026 seconds +- 0.000
 Runtime for {'num_input_tokens': 256, 'num_output_tokens': 2}: 0.046 seconds +- 0.000
 Runtime for {'num_input_tokens': 256, 'num_output_tokens': 4}: 0.087 seconds +- 0.000
@@ -281,7 +274,6 @@ Runtime for {'num_input_tokens': 256, 'num_output_tokens': 24}: 0.491 seconds +-
 Runtime for {'num_input_tokens': 256, 'num_output_tokens': 32}: 0.658 seconds +- 0.009
 Runtime for {'num_input_tokens': 256, 'num_output_tokens': 48}: 0.985 seconds +- 0.015
 Runtime for {'num_input_tokens': 256, 'num_output_tokens': 64}: 1.311 seconds +- 0.017
-Runtime for {'num_input_tokens': 320, 'num_output_tokens': 0}: 0.026 seconds +- 0.000
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 1}: 0.027 seconds +- 0.000
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 2}: 0.049 seconds +- 0.000
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 4}: 0.089 seconds +- 0.002
@@ -292,7 +284,6 @@ Runtime for {'num_input_tokens': 320, 'num_output_tokens': 24}: 0.493 seconds +-
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 32}: 0.658 seconds +- 0.008
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 48}: 0.984 seconds +- 0.011
 Runtime for {'num_input_tokens': 320, 'num_output_tokens': 64}: 1.317 seconds +- 0.042
-Runtime for {'num_input_tokens': 384, 'num_output_tokens': 0}: 0.034 seconds +- 0.000
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 1}: 0.034 seconds +- 0.001
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 2}: 0.059 seconds +- 0.003
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 4}: 0.103 seconds +- 0.007
@@ -303,7 +294,6 @@ Runtime for {'num_input_tokens': 384, 'num_output_tokens': 24}: 0.499 seconds +-
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 32}: 0.656 seconds +- 0.002
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 48}: 0.988 seconds +- 0.022
 Runtime for {'num_input_tokens': 384, 'num_output_tokens': 64}: 1.394 seconds +- 0.055
-Runtime for {'num_input_tokens': 428, 'num_output_tokens': 0}: 0.029 seconds +- 0.000
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 1}: 0.030 seconds +- 0.000
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 2}: 0.050 seconds +- 0.001
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 4}: 0.092 seconds +- 0.001
@@ -314,7 +304,6 @@ Runtime for {'num_input_tokens': 428, 'num_output_tokens': 24}: 0.497 seconds +-
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 32}: 0.664 seconds +- 0.011
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 48}: 0.988 seconds +- 0.009
 Runtime for {'num_input_tokens': 428, 'num_output_tokens': 64}: 1.313 seconds +- 0.012
-Runtime for {'num_input_tokens': 472, 'num_output_tokens': 0}: 0.029 seconds +- 0.000
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 1}: 0.029 seconds +- 0.000
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 2}: 0.050 seconds +- 0.000
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 4}: 0.091 seconds +- 0.001
@@ -325,7 +314,6 @@ Runtime for {'num_input_tokens': 472, 'num_output_tokens': 24}: 0.547 seconds +-
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 32}: 0.663 seconds +- 0.010
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 48}: 0.986 seconds +- 0.011
 Runtime for {'num_input_tokens': 472, 'num_output_tokens': 64}: 1.310 seconds +- 0.012
-Runtime for {'num_input_tokens': 512, 'num_output_tokens': 0}: 0.029 seconds +- 0.000
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 1}: 0.030 seconds +- 0.000
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 2}: 0.051 seconds +- 0.001
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 4}: 0.094 seconds +- 0.003
