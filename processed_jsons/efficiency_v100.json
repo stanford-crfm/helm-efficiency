@@ -1,7 +1,7 @@
 {
   "huggingface/gptj_6b": {
-    "cost_per_output_token": 0.024014584211526864,
-    "cost_for_input_tokens": {
+    "runtime_per_output_token": 0.024014584211526864,
+    "runtime_for_input_tokens": {
       "1": 0.027,
       "16": 0.028,
       "32": 0.027,
@@ -17,8 +17,8 @@
     }
   },
   "openai/ada": {
-    "cost_per_output_token": 0.020425791613975057,
-    "cost_for_input_tokens": {
+    "runtime_per_output_token": 0.020425791613975057,
+    "runtime_for_input_tokens": {
       "1": 0.022,
       "16": 0.024,
       "32": 0.022,
@@ -34,8 +34,8 @@
     }
   },
   "openai/davinci": {
-    "cost_per_output_token": 0.10820130881830282,
-    "cost_for_input_tokens": {
+    "runtime_per_output_token": 0.10820130881830282,
+    "runtime_for_input_tokens": {
       "1": 0.107,
       "16": 0.112,
       "32": 0.114,
@@ -51,8 +51,8 @@
     }
   },
   "ai21/j1-large": {
-    "cost_per_output_token": 0.027804559580781416,
-    "cost_for_input_tokens": {
+    "runtime_per_output_token": 0.027804559580781416,
+    "runtime_for_input_tokens": {
       "1": 0.03,
       "16": 0.033,
       "32": 0.032,
@@ -68,8 +68,8 @@
     }
   },
   "ai21/j1-jumbo": {
-    "cost_per_output_token": 0.08006663525833356,
-    "cost_for_input_tokens": {
+    "runtime_per_output_token": 0.08006663525833356,
+    "runtime_for_input_tokens": {
       "1": 0.09,
       "16": 0.09,
       "32": 0.091,
