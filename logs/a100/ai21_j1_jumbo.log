@@ -334,3 +334,259 @@ Runtime for {'num_input_tokens': 512, 'num_output_tokens': 24}: 1.636 seconds +-
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 32}: 2.149 seconds +- 0.003
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 48}: 3.174 seconds +- 0.004
 Runtime for {'num_input_tokens': 512, 'num_output_tokens': 64}: 4.200 seconds +- 0.003
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+using world size: 8, data-parallel-size: 1, tensor-model-parallel size: 8, pipeline-model-parallel size: 1 
+WARNING: overriding default arguments for tokenizer_type:GPT2BPETokenizer                        with tokenizer_type:GPT2BPETokenizer
+setting global batch size to 1
+using torch.float16 for parameters ...
+Persistent fused layer norm kernel is supported from pytorch v1.11 (nvidia pytorch container paired with v1.11). Defaulting to no_persist_layer_norm=True
+------------------------ arguments ------------------------
+  accumulate_allreduce_grads_in_fp32 .............. False
+  activations_checkpoint_method ................... None
+  activations_checkpoint_num_layers ............... 1
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.999
+  adam_eps ........................................ 1e-08
+  adlr_autoresume ................................. False
+  adlr_autoresume_interval ........................ 1000
+  all_num_input_tokens ............................ [640, 768, 896, 960]
+  all_num_output_tokens ........................... [1, 2, 4, 8, 12, 16, 24, 32, 48, 64]
+  apply_query_key_layer_scaling ................... True
+  apply_residual_connection_post_layernorm ........ False
+  attention_dropout ............................... 0.1
+  attention_softmax_in_fp32 ....................... False
+  bert_binary_head ................................ True
+  bert_load ....................................... None
+  bf16 ............................................ False
+  bias_dropout_fusion ............................. True
+  bias_gelu_fusion ................................ True
+  biencoder_projection_dim ........................ 0
+  biencoder_shared_query_context_model ............ False
+  block_data_path ................................. None
+  classes_fraction ................................ 1.0
+  clip_grad ....................................... 1.0
+  consumed_train_samples .......................... 0
+  consumed_valid_samples .......................... 0
+  data_impl ....................................... infer
+  data_parallel_random_init ....................... False
+  data_parallel_size .............................. 1
+  data_path ....................................... None
+  data_per_class_fraction ......................... 1.0
+  data_sharding ................................... True
+  dataloader_type ................................. single
+  DDP_impl ........................................ local
+  decoder_seq_length .............................. None
+  distribute_checkpointed_activations ............. False
+  distributed_backend ............................. nccl
+  embedding_path .................................. None
+  empty_unused_memory_level ....................... 0
+  encoder_seq_length .............................. 1024
+  eod_mask_loss ................................... False
+  eval_interval ................................... 1000
+  eval_iters ...................................... 100
+  evidence_data_path .............................. None
+  exit_duration_in_mins ........................... None
+  exit_interval ................................... None
+  exit_signal_handler ............................. False
+  ffn_hidden_size ................................. 55296
+  finetune ........................................ False
+  fp16 ............................................ True
+  fp16_lm_cross_entropy ........................... False
+  fp32_residual_connection ........................ False
+  global_batch_size ............................... 1
+  hidden_dropout .................................. 0.1
+  hidden_size ..................................... 13824
+  hysteresis ...................................... 2
+  ict_head_size ................................... None
+  ict_load ........................................ None
+  img_h ........................................... 224
+  img_w ........................................... 224
+  indexer_batch_size .............................. 128
+  indexer_log_interval ............................ 1000
+  inference_batch_times_seqlen_threshold .......... 512
+  init_method_std ................................. 0.02
+  init_method_xavier_uniform ...................... False
+  initial_loss_scale .............................. 4294967296
+  kv_channels ..................................... 144
+  layernorm_epsilon ............................... 1e-05
+  lazy_mpu_init ................................... None
+  load ............................................ None
+  local_rank ...................................... 0
+  log_batch_size_to_tensorboard ................... False
+  log_interval .................................... 100
+  log_learning_rate_to_tensorboard ................ True
+  log_loss_scale_to_tensorboard ................... True
+  log_memory_to_tensorboard ....................... False
+  log_num_zeros_in_grad ........................... False
+  log_params_norm ................................. False
+  log_timers_to_tensorboard ....................... False
+  log_validation_ppl_to_tensorboard ............... False
+  log_world_size_to_tensorboard ................... False
+  loss_scale ...................................... None
+  loss_scale_window ............................... 1000
+  lr .............................................. None
+  lr_decay_iters .................................. None
+  lr_decay_samples ................................ None
+  lr_decay_style .................................. linear
+  lr_warmup_fraction .............................. None
+  lr_warmup_iters ................................. 0
+  lr_warmup_samples ............................... 0
+  make_vocab_size_divisible_by .................... 128
+  mask_prob ....................................... 0.15
+  masked_softmax_fusion ........................... True
+  max_position_embeddings ......................... 1024
+  merge_file ...................................... data/gpt2/gpt2_merges.txt
+  micro_batch_size ................................ 1
+  min_loss_scale .................................. 1.0
+  min_lr .......................................... 0.0
+  mmap_warmup ..................................... False
+  no_async_tensor_model_parallel_allreduce ........ False
+  no_load_optim ................................... True
+  no_load_rng ..................................... True
+  no_persist_layer_norm ........................... True
+  no_save_optim ................................... None
+  no_save_rng ..................................... None
+  num_attention_heads ............................. 96
+  num_channels .................................... 3
+  num_classes ..................................... 1000
+  num_layers ...................................... 76
+  num_layers_per_virtual_pipeline_stage ........... None
+  num_workers ..................................... 2
+  onnx_safe ....................................... None
+  openai_gelu ..................................... False
+  optimizer ....................................... adam
+  out_seq_length .................................. 1024
+  override_lr_scheduler ........................... False
+  params_dtype .................................... torch.float16
+  patch_dim ....................................... 16
+  pipeline_model_parallel_size .................... 1
+  pipeline_model_parallel_split_rank .............. None
+  prompts_file .................................... data/alice_in_wonderland.txt
+  query_in_block_prob ............................. 0.1
+  rampup_batch_size ............................... None
+  rank ............................................ 0
+  reset_attention_mask ............................ False
+  reset_position_ids .............................. False
+  retriever_report_topk_accuracies ................ []
+  retriever_score_scaling ......................... False
+  retriever_seq_length ............................ 256
+  sample_rate ..................................... 1.0
+  save ............................................ None
+  save_interval ................................... None
+  scatter_gather_tensors_in_pipeline .............. True
+  seed ............................................ 42
+  seq_length ...................................... 1024
+  sgd_momentum .................................... 0.9
+  short_seq_prob .................................. 0.1
+  split ........................................... 969, 30, 1
+  temperature ..................................... 1.0
+  tensor_model_parallel_size ...................... 8
+  tensorboard_dir ................................. None
+  tensorboard_log_interval ........................ 1
+  tensorboard_queue_size .......................... 1000
+  titles_data_path ................................ None
+  tokenizer_type .................................. GPT2BPETokenizer
+  top_k ........................................... 0
+  top_p ........................................... 0.9
+  train_iters ..................................... None
+  train_samples ................................... None
+  use_checkpoint_lr_scheduler ..................... False
+  use_contiguous_buffers_in_local_ddp ............. True
+  use_cpu_initialization .......................... None
+  use_one_sent_docs ............................... False
+  virtual_pipeline_model_parallel_size ............ None
+  vocab_extra_ids ................................. 0
+  vocab_file ...................................... data/gpt2/gpt2_vocab.json
+  weight_decay .................................... 0.01
+  world_size ...................................... 8
+-------------------- end of arguments ---------------------
+setting number of micro-batches to constant 1
+> building GPT2BPETokenizer tokenizer ...
+ > padded vocab (size: 50257) with 943 dummy tokens (new size: 51200)
+> initializing torch distributed ...
+> initializing tensor model parallel with size 8
+> initializing pipeline model parallel with size 1
+> setting random seeds to 42 ...
+> initializing model parallel cuda seeds on global rank 0, model parallel rank 0, and data parallel rank 0 with model parallel seed: 2760 and data parallel seed: 42
+> compiling dataset index builder ...
+make: Entering directory '/future/u/keshav2/benchmarking/megatron_lm/megatron/data'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/future/u/keshav2/benchmarking/megatron_lm/megatron/data'
+>>> done with dataset index builder. Compilation time: 0.117 seconds
+> compiling and loading fused kernels ...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_upper_triang_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_upper_triang_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /future/u/keshav2/benchmarking/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module fused_mix_prec_layer_norm_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_mix_prec_layer_norm_cuda...
+>>> done with compiling and loading fused kernels. Compilation time: 2.478 seconds
+building GPT model ...
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 0): 21895619328
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 0): 21895619328
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 0): 21895619328
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 0): 21895619328
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 0): 21895619328
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 0): 21895619328
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 0): 21895619328
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 21895619328
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 1}: 0.207 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 2}: 0.272 seconds +- 0.001
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 4}: 0.399 seconds +- 0.001
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 8}: 0.654 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 12}: 0.910 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 16}: 1.166 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 24}: 1.678 seconds +- 0.003
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 32}: 2.191 seconds +- 0.003
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 48}: 3.216 seconds +- 0.003
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 64}: 4.240 seconds +- 0.003
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 1}: 0.243 seconds +- 0.001
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 2}: 0.308 seconds +- 0.003
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 4}: 0.439 seconds +- 0.009
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 8}: 0.692 seconds +- 0.001
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 12}: 0.947 seconds +- 0.001
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 16}: 1.203 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 24}: 1.715 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 32}: 2.223 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 48}: 3.246 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 64}: 4.271 seconds +- 0.005
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 1}: 0.274 seconds +- 0.001
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 2}: 0.340 seconds +- 0.002
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 4}: 0.474 seconds +- 0.013
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 8}: 0.724 seconds +- 0.002
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 12}: 0.979 seconds +- 0.002
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 16}: 1.234 seconds +- 0.002
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 24}: 1.747 seconds +- 0.003
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 32}: 2.259 seconds +- 0.003
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 48}: 3.283 seconds +- 0.003
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 64}: 4.310 seconds +- 0.004
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 1}: 0.301 seconds +- 0.001
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 2}: 0.369 seconds +- 0.003
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 4}: 0.507 seconds +- 0.017
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 8}: 0.751 seconds +- 0.004
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 12}: 1.006 seconds +- 0.008
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 16}: 1.259 seconds +- 0.002
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 24}: 1.770 seconds +- 0.003
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 32}: 2.283 seconds +- 0.003
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 48}: 3.307 seconds +- 0.004
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 64}: 4.333 seconds +- 0.003
