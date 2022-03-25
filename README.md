@@ -30,3 +30,9 @@ following command:
 `scripts` contains some example scripts for various models of interest.
 
 `logs` contains logfiles of experiment runs on V100 and A100 GPUs.
+
+`fit_runtimes.ipynb` is an IPython notebook that fits a linear regression
+model to the collected raw runtimes to determine per-model per-output-token
+runtimes as well as the cost of processing a prompt of a given number of
+tokens. `fit_runtimes.ipynb` also dumps these parameters into JSON files
+in `processed_jsons/`.
