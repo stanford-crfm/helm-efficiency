@@ -1,6 +1,6 @@
 {
   "huggingface/gptj_6b": {
-    "runtime_per_output_token": 0.024014584211526864,
+    "runtime_per_output_token": 0.024,
     "runtime_for_input_tokens": {
       "1": 0.027,
       "16": 0.028,
@@ -17,7 +17,7 @@
     }
   },
   "openai/ada": {
-    "runtime_per_output_token": 0.020425791613975057,
+    "runtime_per_output_token": 0.02,
     "runtime_for_input_tokens": {
       "1": 0.022,
       "16": 0.024,
@@ -34,7 +34,7 @@
     }
   },
   "openai/davinci": {
-    "runtime_per_output_token": 0.10820130881830282,
+    "runtime_per_output_token": 0.108,
     "runtime_for_input_tokens": {
       "1": 0.107,
       "16": 0.112,
@@ -51,7 +51,24 @@
     }
   },
   "ai21/j1-large": {
-    "runtime_per_output_token": 0.027804559580781416,
+    "runtime_per_output_token": 0.028,
+    "runtime_for_input_tokens": {
+      "1": 0.03,
+      "16": 0.033,
+      "32": 0.032,
+      "64": 0.039,
+      "128": 0.045,
+      "192": 0.057,
+      "256": 0.059,
+      "320": 0.077,
+      "384": 0.081,
+      "428": 0.106,
+      "472": 0.102,
+      "512": 0.104
+    }
+  },
+  "openai/curie": {
+    "runtime_per_output_token": 0.028,
     "runtime_for_input_tokens": {
       "1": 0.03,
       "16": 0.033,
@@ -68,7 +85,7 @@
     }
   },
   "ai21/j1-jumbo": {
-    "runtime_per_output_token": 0.08006663525833356,
+    "runtime_per_output_token": 0.08,
     "runtime_for_input_tokens": {
       "1": 0.09,
       "16": 0.09,
