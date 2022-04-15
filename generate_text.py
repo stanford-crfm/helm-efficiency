@@ -54,8 +54,6 @@ def add_text_generate_args(parser):
                        help='Top p sampling.')
     group.add_argument("--top-k", type=int, default=0,
                        help='Top k sampling.')
-    group.add_argument("--out-seq-length", type=int, default=1024,
-                       help='Size of the output generated text.')
     return parser
 
 
