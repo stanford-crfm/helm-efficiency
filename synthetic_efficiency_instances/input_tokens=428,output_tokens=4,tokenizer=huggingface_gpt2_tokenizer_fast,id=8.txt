@@ -1,0 +1,8 @@
+input: " The Trial\nChapter 87. The Challenge\nChapter 88. The Insult\nChapter 89. The Night\nChapter 90. The Meeting\nChapter 91. Mother and Son\nChapter 92. The Suicide\nChapter 93. Valentine\nChapter 94. Maximilian\u2019s Avowal\nChapter 95. Father and Daughter\n\nVOLUME FIVE\nChapter 96. The Contract\nChapter 97. The Departure for Belgium\nChapter 98. The Bell and Bottle Tavern\nChapter 99. The Law\nChapter 100. The Apparition\nChapter 101. Locusta\nChapter 102. Valentine\nChapter 103. Maximilian\nChapter 104. Danglars\u2019 Signature\nChapter 105. The Cemetery of P\u00e8re-Lachaise \nChapter 106. Dividing the Proceeds\nChapter 107. The Lions\u2019 Den\nChapter 108. The Judge\nChapter 109. The Assizes\nChapter 110. The Indictment\nChapter 111. Expiation\nChapter 112. The Departure\nChapter 113. The Past\nChapter 114. Peppino\nChapter 115. Luigi Vampa\u2019s Bill of Fare \nChapter 116. The Pardon\nChapter 117. The Fifth of October\n\n\n\nVOLUME ONE\n\n\n\n Chapter 1. Marseilles\u2014The Arrival\n\nOn the 24th of February, 1815, the look-out at Notre-Dame de la Garde\nsignalled the three-master, the _Pharaon_ from Smyrna, Trieste, and\nNaples.\n\nAs usual, a pilot put off immediately, and rounding the Ch\u00e2teau d\u2019If,\ngot on board the vessel between Cape Morgiou and Rion island.\n\nImmediately, and according to custom, the ramparts of Fort Saint-Jean\nwere covered with spectators; it is always an event at Marseilles for a\nship to come into port, especially when this ship, like the _Pharaon_,\nhas been built, rigged, and laden at the old Phoce"
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null

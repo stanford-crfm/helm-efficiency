@@ -1,0 +1,8 @@
+input: "rship, of reading a letter from Byelinsky to Gogol, and of\nknowing of the intention to set up a printing press.\u201d Under Nicholas\nI. (that \u201cstern and just man,\u201d as Maurice Baring calls him) this was\nenough, and he was condemned to death. After eight months\u2019 imprisonment\nhe was with twenty-one others taken out to the Semyonovsky Square to\nbe shot. Writing to his brother Mihail, Dostoevsky says: \u201cThey snapped\nwords over our heads, and they made us put on"
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null

@@ -1,0 +1,8 @@
+input: "They were admirable things for the observer\u2014excellent for\ndrawing the veil"
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null

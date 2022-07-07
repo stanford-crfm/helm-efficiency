@@ -1,0 +1,8 @@
+input: " keen\nnature. He was still, as ever, deeply attracted by the study of crime,\nand occupied his immense faculties and extraordinary powers of\nobservation in following out those clues, and clearing up those\nmysteries which had been abandoned as hopeless by the official police.\nFrom time to time I heard some vague account of his doings: of his\nsummons to Odessa in the case of the Trepoff murder, of his clearing up\nof the singular tragedy of the Atkinson brothers at Trincomalee, and\nfinally of the mission which he had accomplished so delicately and\nsuccessfully for the reigning family of Holland. Beyond these signs of\nhis activity, however, which I merely shared with all the readers of\nthe daily press, I knew little of my former friend and companion.\n\nOne night\u2014it was on the twentieth of March, 1888\u2014I was returning from a\njourney to a patient (for I had now returned to civil practice), when\nmy way led me through Baker Street. As I passed the well-remembered\ndoor, which must always be associated in my mind with my wooing, and\nwith the dark incidents of the Study in Scarlet, I was seized"
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null

@@ -1,0 +1,8 @@
+input: "43. The House at Auteuil\nChapter 44. The Vendetta\nChapter 45. The Rain of Blood\nChapter 46. Unlimited Credit\nChapter 47. The Dappled Grays\n\n VOLUME THREE\nChapter 48. Ideology\nChapter 49. Hayd\u00e9e\nChapter 50"
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null

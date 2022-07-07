@@ -1,0 +1,8 @@
+input: "\nof his own establishment, were sufficient to absorb all my attention,\nwhile Holmes, who loathed every form of society with his whole Bohemian\nsoul, remained in our lodgings in Baker Street, buried among his old\nbooks, and alternating from week to week between cocaine and ambition,\nthe drowsiness of the drug, and the fierce energy of his own keen\nnature. He was still, as ever, deeply attracted by the study of crime,\nand occupied his immense faculties and extraordinary powers of\nobservation in following out those clues, and clearing up those\nmysteries which had been abandoned as hopeless by the official police.\nFrom time to time I heard some vague account of his doings: of his\nsummons to Odessa in the case of the Trepoff murder, of his clearing up\nof the singular"
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null

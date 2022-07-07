@@ -1,0 +1,8 @@
+input: "ghbourhood, this truth is so well\n      fixed in the minds of the surrounding families, that he is\n      considered as the rightful property of some one or other of their\n      daughters.\n\n      \u201cMy dear Mr. Bennet,\u201d said his lady to him one day, \u201chave you\n      heard that Netherfield Park is let at last?\u201d\n\n      Mr. Bennet replied that he had not.\n\n      \u201cBut it is,\u201d returned she; \u201cfor Mrs. Long has just been here, and\n      she told me all about it.\u201d\n\n      Mr. Bennet made no answer.\n\n      \u201cDo not you want to know who has taken it?\u201d cried his wife\n      impatiently.\n\n      \u201c_You_ want to tell me, and I have no objection to hearing it.\u201d\n\n      This was invitation enough.\n\n      \u201cWhy, my dear, you must know, Mrs. Long says that Netherfield is\n      taken by a young man of large fortune from the north of England;\n      that he came down on Monday in a chaise and four to see the\n      place, and was so much delighted with it that he agreed with Mr.\n      Morris immediately; that he is to take possession before\n      Michaelmas, and some of his servants are to be in the house by\n      the end of next week.\u201d\n\n      \u201cWhat is his name?\u201d\n\n      \u201cBingley.\u201d\n\n      \u201cIs he married or single?\u201d\n\n      \u201cOh! single, my dear, to be sure! A single man of large fortune;\n      four or five thousand a year. What a fine thing for"
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null

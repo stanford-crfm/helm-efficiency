@@ -1,0 +1,8 @@
+input: " our girls!\u201d\n\n      \u201cHow so? how can it affect them?\u201d\n\n      \u201cMy dear Mr. Bennet,\u201d replied his wife, \u201chow can you be so\n      tiresome! You must know that I am thinking of his marrying one of\n      them.\u201d\n\n      \u201cIs that his design in settling here?\u201d\n\n      \u201cDesign! nonsense, how can you talk so! But it is very likely\n      that he _may_ fall in love with one of them, and therefore you\n      must visit him as soon as he comes.\u201d\n\n      \u201cI see no occasion for that. You and the girls may go, or you may\n      send them by themselves, which perhaps will be still better, for\n      as you are as handsome as any of them, Mr. Bingley might like you\n      the best of the party.\u201d\n\n      \u201cMy dear, you flatter me. I certainly _have_ had my share of\n      beauty, but I do not pretend to be anything extraordinary now.\n      When a woman has five grown-up daughters, she ought to give over\n      thinking of her own beauty.\u201d\n\n      \u201cIn such cases, a woman has not often much beauty to think of.\u201d\n\n      \u201cBut, my dear, you must indeed go and see Mr. Bingley when he\n      comes into the neighbourhood.\u201d\n\n      \u201cIt is more than I engage for, I assure you.\u201d\n\n      \u201cBut consider your daughters. Only think what an establishment it\n      would be for one of them. Sir William and Lady Lucas are\n      determined to go, merely on that account, for in general, you\n   "
+references: [{"output": "", "tags": ["correct"]}]
+split: "test"
+sub_split: null
+id: null
+perturbation: null
+contrast_inputs: null
+contrast_references: null
