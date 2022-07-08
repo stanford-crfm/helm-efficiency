@@ -1,8 +1,0 @@
-input: " afterwards,\nit occurred to her that she ought to have wondered at this, but at the\ntime it all seemed quite natural); but when the Rabbit actually _took a\nwatch out of its waistcoat-pocket_, and looked at it, and then hurried\non, Alice started to her feet,"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

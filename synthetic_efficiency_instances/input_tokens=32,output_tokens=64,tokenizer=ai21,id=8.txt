@@ -1,8 +1,0 @@
-input: "\nChapter 39. The Guests\nChapter 40. The Breakfast\nChapter 41. The Presentation\nChapter 42. Monsieur Bertuccio\nChapter "
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

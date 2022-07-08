@@ -1,8 +1,0 @@
-input: " temperament was to introduce a distracting factor which might\nthrow a doubt upon all his mental results. Grit in a sensitive\ninstrument, or a crack in one of his own high-power lenses, would not\nbe more disturbing"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

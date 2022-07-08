@@ -1,8 +1,0 @@
-input: "\nclose by her.\n\nThere was nothing so _very_ remarkable in that; nor did Alice think it\nso _very_ much out of the way to hear the Rabbit say to itself, \u201cOh\ndear! Oh dear! I shall be late!\u201d (when she thought it over"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

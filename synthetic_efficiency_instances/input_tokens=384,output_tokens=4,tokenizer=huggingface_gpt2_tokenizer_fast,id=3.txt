@@ -1,8 +1,0 @@
-input: "zzolata\nChapter 36. The Carnival at Rome.\nChapter 37. The Catacombs of Saint Sebastian \nChapter 38. The Rendezvous\nChapter 39. The Guests\nChapter 40. The Breakfast\nChapter 41. The Presentation\nChapter 42. Monsieur Bertuccio\nChapter 43. The House at Auteuil\nChapter 44. The Vendetta\nChapter 45. The Rain of Blood\nChapter 46. Unlimited Credit\nChapter 47. The Dappled Grays\n\n VOLUME THREE\nChapter 48. Ideology\nChapter 49. Hayd\u00e9e\nChapter 50. The Morrel Family\nChapter 51. Pyramus and Thisbe\nChapter 52. Toxicology\nChapter 53. Robert le Diable\nChapter 54. A Flurry in Stocks\nChapter 55. Major Cavalcanti\nChapter 56. Andrea Cavalcanti\nChapter 57. In the Lucern Patch\nChapter 58. M. Noirtier de Villefort\nChapter 59. The Will\nChapter 60. The Telegraph\nChapter 61. How a Gardener May Get Rid of the Dormice\nChapter 62. Ghosts\nChapter 63. The Dinner\nChapter 64. The Beggar\nChapter 65. A Conjugal Scene\nChapter 66. Matrimonial Projects\nChapter 67. The Office of the King\u2019s Attorney\nChapter 68. A Summer Ball\nChapter 69. The Inquiry\nChapter 70. The Ball\nChapter 71. Bread and Salt\nChapter 72. Madame de Saint-M\u00e9ran\nChapter 73. The Promise\n\nVOLUME FOUR\nChapter 74. The Villefort Family Vault\nChapter 75. A Signed Statement\nChapter 76. Progress of Cavalcanti the Younger\nChapter 77. Hayd\u00e9e\nChapter 78. We hear From Yanina\nChapter 79. The Lemonade\nChapter 80. The Accusation"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

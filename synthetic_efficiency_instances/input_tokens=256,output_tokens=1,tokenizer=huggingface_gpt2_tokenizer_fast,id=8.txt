@@ -1,8 +1,0 @@
-input: "Chapter 66. Matrimonial Projects\nChapter 67. The Office of the King\u2019s Attorney\nChapter 68. A Summer Ball\nChapter 69. The Inquiry\nChapter 70. The Ball\nChapter 71. Bread and Salt\nChapter 72. Madame de Saint-M\u00e9ran\nChapter 73. The Promise\n\nVOLUME FOUR\nChapter 74. The Villefort Family Vault\nChapter 75. A Signed Statement\nChapter 76. Progress of Cavalcanti the Younger\nChapter 77. Hayd\u00e9e\nChapter 78. We hear From Yanina\nChapter 79. The Lemonade\nChapter 80. The Accusation\nChapter 81. The Room of the Retired Baker\nChapter 82. The Burglary\nChapter 83. The Hand of God\nChapter 84. Beauchamp\nChapter 85. The Journey\nChapter 86. The Trial\nChapter 87. The Challenge\nChapter 88. The Insult\nChapter 89. The Night\nChapter 90. The Meeting\nChapter 91. Mother and Son\nChapter 92. The Suicide\nChapter 93. Valentine\nChapter 94. Maximilian\u2019s Avowal\nChapter 95. Father and Daughter\n\nVOLUME FIVE\nChapter 96. The Contract\nChapter 97. The Depart"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

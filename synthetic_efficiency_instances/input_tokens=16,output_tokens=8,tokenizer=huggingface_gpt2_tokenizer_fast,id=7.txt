@@ -1,8 +1,0 @@
-input: " from men\u2019s motives and actions. But for the trained\nreasoner"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

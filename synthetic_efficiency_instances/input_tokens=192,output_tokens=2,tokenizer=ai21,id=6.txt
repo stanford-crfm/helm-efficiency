@@ -1,8 +1,0 @@
-input: ", and was so much delighted with it that he agreed with Mr.\n      Morris immediately; that he is to take possession before\n      Michaelmas, and some of his servants are to be in the house by\n      the end of next week.\u201d\n\n      \u201cWhat is his name?\u201d\n\n      \u201cBingley.\u201d\n\n      \u201cIs he married or single?\u201d\n\n      \u201cOh! single, my dear, to be sure! A single man of large fortune;\n      four or five thousand a year. What a fine thing for our girls!\u201d\n\n      \u201cHow so? how can it affect them?\u201d\n\n      \u201cMy dear Mr. Bennet,\u201d replied his wife, \u201chow can you be so\n      tiresome! You must know that I am thinking of his marrying one of\n      them.\u201d\n\n      \u201cIs that his design in settling here?\u201d\n\n      \u201cDesign! nonsense, how can you talk so! But it is very likely\n      that he _may_ fall in love with one of them, and therefore you\n      must visit him as soon as he comes.\u201d\n\n   "
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

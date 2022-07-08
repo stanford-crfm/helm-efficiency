@@ -1,8 +1,0 @@
-input: " Grit in a sensitive\ninstrument, or a crack in one of his own high-power lenses, would not\nbe more disturbing than a strong emotion in a nature such as his. And\nyet there was but one woman to him, and that woman was the late Irene\nAdler, of dubious"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

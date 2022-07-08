@@ -1,8 +1,0 @@
-input: " Plestcheiev and Dourov, who were next to me, and to\nbid them farewell. Suddenly the troops beat a tattoo, we were unbound,\nbrought back upon the scaffold, and informed that his Majesty had spared\nus our lives.\u201d The sentence was commuted to hard labour.\n\nOne of the prisoners, Grigoryev, went mad as soon as he was untied, and\nnever regained his sanity.\n\nThe intense suffering of this experience left a lasting stamp on\nDostoevsky\u2019s mind. Though his religious temper led him in the end to\naccept every suffering with resignation and to regard it as a blessing\nin his own case, he constantly recurs to the subject in his writings.\nHe describes the awful agony of the condemned man and insists on the\ncruelty of inflicting such torture. Then followed four years of penal\nservitude, spent"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null

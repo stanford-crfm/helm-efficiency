@@ -1,8 +1,0 @@
-input: "They were admirable things for the observer\u2014excellent for\ndrawing the veil from men\u2019s motives and actions. But for the trained\nreasoner to admit such intrusions into his own delicate and finely\nadjusted temperament was to introduce a distracting factor which might\nthrow a doubt upon all his mental results. Grit in a sensitive\ninstrument, or a crack in one of his own high-power lenses, would not\nbe more disturbing than a strong emotion in a nature such as his. And\nyet there was but one woman to him, and that woman was the late Irene\nAdler, of dubious and questionable memory.\n\nI had seen little of Holmes lately. My marriage had drifted us away\nfrom each other. My own complete happiness, and the home-centred\ninterests which rise up around the man who first finds himself master\nof his own establishment, were sufficient to absorb all my attention,"
-references: [{"output": "", "tags": ["correct"]}]
-split: "test"
-sub_split: null
-id: null
-perturbation: null
-contrast_inputs: null
-contrast_references: null
