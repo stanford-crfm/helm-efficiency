@@ -1,5 +1,6 @@
 scenario,inference_runtime,inference_idealized_runtime,inference_runtime_discrepancy,num_prompt_tokens,num_perplexity_tokens,num_output_tokens,finish_reason_length,finish_reason_stop,finish_reason_endoftext,finish_reason_unknown,exact_match
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=2,model=ai21_j1-large",0.5986398697,0.071,0.5276398697,512,2,2,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=64,model=ai21_j1-large",2.908870816,1.645,1.263870816,1536,64,64,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=2,model=ai21_j1-grande",1.641138625,,,1536,2,2,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1024,num_output_tokens=4,model=ai21_j1-jumbo",1.042572141,0.499,0.5435721407,1024,4,4,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=1,model=ai21_j1-grande",1.759978747,,,1536,1,1,1,0,0,0,0
@@ -11,8 +12,11 @@ scenario,inference_runtime,inference_idealized_runtime,inference_runtime_discrep
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=1,model=ai21_j1-large",0.5751299858,0.047,0.5281299858,512,1,1,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=4,model=ai21_j1-large",0.5849167824,0.119,0.4659167824,512,4,4,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=2,model=ai21_j1-grande",0.5848522425,,,512,2,2,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=8,model=ai21_j1-large",1.264359641,0.301,0.9633596411,1536,8,8,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1024,num_output_tokens=64,model=ai21_j1-jumbo",5.345218849,4.339,1.006218849,1024,64,64,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=64,model=ai21_j1-large",1.7588341,1.538,0.2208340998,1,64,64,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=32,model=ai21_j1-jumbo",3.599796867,2.434,1.165796867,1536,32,32,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=16,model=ai21_j1-large",1.642773032,0.493,1.149773032,1536,16,16,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=4,model=ai21_j1-jumbo",0.5772537231,0.262,0.3152537231,1,4,4,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=8,model=ai21_j1-jumbo",0.8791004896,0.613,0.2661004896,512,8,8,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=8,model=ai21_j1-large",0.4616316319,0.194,0.2676316319,1,8,8,1,0,0,0,0
@@ -29,11 +33,16 @@ scenario,inference_runtime,inference_idealized_runtime,inference_runtime_discrep
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=16,model=ai21_j1-large",1.049173951,0.407,0.6421739511,512,16,16,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=4,model=ai21_j1-jumbo",0.8165911674,0.357,0.4595911674,512,4,4,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=8,model=ai21_j1-jumbo",0.7377948523,0.518,0.2197948523,1,8,8,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=16,model=ai21_j1-jumbo",2.335177255,1.41,0.9251772547,1536,16,16,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=32,model=ai21_j1-jumbo",2.014015913,2.054,-0.03998408699,1,32,32,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=64,model=ai21_j1-jumbo",6.829295826,4.482,2.347295826,1536,64,64,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1024,num_output_tokens=2,model=ai21_j1-grande",0.8462424278,,,1024,2,2,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=16,model=ai21_j1-grande",1.208872414,,,512,16,16,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=32,model=ai21_j1-large",1.977460766,0.877,1.100460766,1536,32,32,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1024,num_output_tokens=64,model=ai21_j1-grande",3.556584573,,,1024,64,64,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=8,model=ai21_j1-grande",1.28882575,,,1536,8,8,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=64,model=ai21_j1-jumbo",4.236369872,4.197,0.03936987209,512,64,64,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=32,model=ai21_j1-grande",3.00267694,,,1536,32,32,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=2,model=ai21_j1-jumbo",0.7149258375,0.229,0.4859258375,512,2,2,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=2,model=ai21_j1-large",0.3512247086,0.05,0.3012247086,1,2,2,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1024,num_output_tokens=8,model=ai21_j1-jumbo",1.44011507,0.755,0.6851150703,1024,8,8,1,0,0,0,0
@@ -67,7 +76,9 @@ scenario,inference_runtime,inference_idealized_runtime,inference_runtime_discrep
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=512,num_output_tokens=32,model=ai21_j1-large",1.33434031,0.791,0.5433403101,512,32,32,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1024,num_output_tokens=2,model=ai21_j1-large",0.8015788078,0.113,0.6885788078,1024,2,2,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=4,model=ai21_j1-grande",1.199375224,,,1536,4,4,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=64,model=ai21_j1-grande",3.624021673,,,1536,64,64,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=1,model=ai21_j1-grande",0.5957553864,,,1,1,1,1,0,0,0,0
+"synthetic_efficiency:tokenizer=ai21,num_input_tokens=1536,num_output_tokens=16,model=ai21_j1-grande",2.001631236,,,1536,16,16,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1024,num_output_tokens=8,model=ai21_j1-grande",3.420897222,,,1024,8,8,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=32,model=ai21_j1-large",0.9384698868,0.77,0.1684698868,1,32,32,1,0,0,0,0
 "synthetic_efficiency:tokenizer=ai21,num_input_tokens=1,num_output_tokens=32,model=ai21_j1-grande",1.243482637,,,1,32,32,1,0,0,0,0
