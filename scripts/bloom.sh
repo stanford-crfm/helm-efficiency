@@ -11,6 +11,7 @@ MERGE_FILE=data/gpt2/gpt2_merges.txt
 
 export PYTHONPATH=$PYTHONPATH:megatron_lm/
 
+# Set --make-vocab-size-divisible-by to 31335 to set vocab_size to desired 250680.
 python -u -m torch.distributed.launch $DISTRIBUTED_ARGS generate_text.py   \
        --tensor-model-parallel-size 8  \
        --pipeline-model-parallel-size 1  \
@@ -18,7 +19,7 @@ python -u -m torch.distributed.launch $DISTRIBUTED_ARGS generate_text.py   \
        --hidden-size 14336  \
        --num-attention-heads 112  \
        --max-position-embeddings 2048  \
-       --make-vocab-size-divisible-by 250680  \
+       --make-vocab-size-divisible-by 31335  \
        --tokenizer-type GPT2BPETokenizer  \
        --fp16  \
        --micro-batch-size 1  \
