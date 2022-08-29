@@ -3,30 +3,73 @@
     "runtime_per_output_token": 0.016,
     "runtime_for_prompt_tokens": {
       "1": 0.016,
-      "512": 0.187,
-      "1024": 0.317,
-      "1536": 0.419
+      "512": 0.17,
+      "1024": 0.315,
+      "1536": 0.439
     },
-    "overhead": 0.248
+    "overhead": 0.262
   },
   "ai21/j1-grande": {
     "runtime_per_output_token": 0.022,
     "runtime_for_prompt_tokens": {
       "1": 0.022,
-      "512": 0.2,
-      "1024": 0.365,
-      "1536": 0.519
+      "512": 0.184,
+      "1024": 0.368,
+      "1536": 0.511
     },
-    "overhead": 0.267
+    "overhead": 0.277
   },
   "ai21/j1-jumbo": {
     "runtime_per_output_token": 0.042,
     "runtime_for_prompt_tokens": {
       "1": 0.042,
-      "512": 0.277,
-      "1024": 0.419,
-      "1536": 0.648
+      "512": 0.265,
+      "1024": 0.44,
+      "1536": 0.646
     },
-    "overhead": 0.276
+    "overhead": 0.271
+  },
+  "anthropic/stanford-online-all-v4-s3": {
+    "runtime_per_output_token": 0.065,
+    "runtime_for_prompt_tokens": {
+      "1": 0.065,
+      "512": 0.225,
+      "1024": 0.256,
+      "1536": 0.48
+    },
+    "overhead": 0.45
+  },
+  "openai/davinci": {
+    "runtime_per_output_token": 0.03,
+    "runtime_for_prompt_tokens": {
+      "1": 0.03,
+      "256": 0.068,
+      "512": 0.063,
+      "1024": 0.074,
+      "1536": 0.093
+    },
+    "overhead": 0.167
+  },
+  "openai/text-davinci-001": {
+    "runtime_per_output_token": 0.011,
+    "runtime_for_prompt_tokens": {
+      "1": 0.011,
+      "256": 0.022,
+      "512": 0.014,
+      "1024": 0.019,
+      "1536": 0.026
+    },
+    "overhead": 0.134
+  },
+  "openai/text-davinci-002": {
+    "runtime_per_output_token": 0.025,
+    "runtime_for_prompt_tokens": {
+      "1": 0.025,
+      "256": 0.064,
+      "512": 0.025,
+      "1024": 0.025,
+      "1536": 0.096
+    },
+    "overhead": 0.142
   }
 }
