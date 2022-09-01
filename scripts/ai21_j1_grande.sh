@@ -18,6 +18,7 @@ python -u -m torch.distributed.launch $DISTRIBUTED_ARGS generate_text.py   \
        --hidden-size 5120  \
        --num-attention-heads 40  \
        --max-position-embeddings 2048  \
+       --make-vocab-size-divisible-by 262144  \
        --tokenizer-type GPT2BPETokenizer  \
        --fp16  \
        --micro-batch-size 1  \

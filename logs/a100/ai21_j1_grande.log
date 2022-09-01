@@ -1,0 +1,475 @@
+using world size: 1, data-parallel-size: 1, tensor-model-parallel size: 1, pipeline-model-parallel size: 1 
+WARNING: overriding default arguments for tokenizer_type:GPT2BPETokenizer                        with tokenizer_type:GPT2BPETokenizer
+setting global batch size to 1
+using torch.float16 for parameters ...
+Persistent fused layer norm kernel is supported from pytorch v1.11 (nvidia pytorch container paired with v1.11). Defaulting to no_persist_layer_norm=True
+------------------------ arguments ------------------------
+  accumulate_allreduce_grads_in_fp32 .............. False
+  activations_checkpoint_method ................... None
+  activations_checkpoint_num_layers ............... 1
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.999
+  adam_eps ........................................ 1e-08
+  adlr_autoresume ................................. False
+  adlr_autoresume_interval ........................ 1000
+  all_num_input_tokens ............................ [1, 16, 32, 64, 128, 192, 256, 320, 384, 428, 472, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+  all_num_output_tokens ........................... [1, 2, 4, 8, 12, 16, 24, 32, 48, 64]
+  apply_query_key_layer_scaling ................... True
+  apply_residual_connection_post_layernorm ........ False
+  attention_dropout ............................... 0.1
+  attention_softmax_in_fp32 ....................... False
+  bert_binary_head ................................ True
+  bert_load ....................................... None
+  bf16 ............................................ False
+  bias_dropout_fusion ............................. True
+  bias_gelu_fusion ................................ True
+  biencoder_projection_dim ........................ 0
+  biencoder_shared_query_context_model ............ False
+  block_data_path ................................. None
+  classes_fraction ................................ 1.0
+  clip_grad ....................................... 1.0
+  consumed_train_samples .......................... 0
+  consumed_valid_samples .......................... 0
+  data_impl ....................................... infer
+  data_parallel_random_init ....................... False
+  data_parallel_size .............................. 1
+  data_path ....................................... None
+  data_per_class_fraction ......................... 1.0
+  data_sharding ................................... True
+  dataloader_type ................................. single
+  DDP_impl ........................................ local
+  decoder_seq_length .............................. None
+  distribute_checkpointed_activations ............. False
+  distributed_backend ............................. nccl
+  embedding_path .................................. None
+  empty_unused_memory_level ....................... 0
+  encoder_seq_length .............................. 2048
+  eod_mask_loss ................................... False
+  eval_interval ................................... 1000
+  eval_iters ...................................... 100
+  evidence_data_path .............................. None
+  exit_duration_in_mins ........................... None
+  exit_interval ................................... None
+  exit_signal_handler ............................. False
+  ffn_hidden_size ................................. 20480
+  finetune ........................................ False
+  fp16 ............................................ True
+  fp16_lm_cross_entropy ........................... False
+  fp32_residual_connection ........................ False
+  global_batch_size ............................... 1
+  hidden_dropout .................................. 0.1
+  hidden_size ..................................... 5120
+  hysteresis ...................................... 2
+  ict_head_size ................................... None
+  ict_load ........................................ None
+  img_h ........................................... 224
+  img_w ........................................... 224
+  indexer_batch_size .............................. 128
+  indexer_log_interval ............................ 1000
+  inference_batch_times_seqlen_threshold .......... 512
+  init_method_std ................................. 0.02
+  init_method_xavier_uniform ...................... False
+  initial_loss_scale .............................. 4294967296
+  kv_channels ..................................... 128
+  layernorm_epsilon ............................... 1e-05
+  lazy_mpu_init ................................... None
+  load ............................................ None
+  local_rank ...................................... 0
+  log_batch_size_to_tensorboard ................... False
+  log_interval .................................... 100
+  log_learning_rate_to_tensorboard ................ True
+  log_loss_scale_to_tensorboard ................... True
+  log_memory_to_tensorboard ....................... False
+  log_num_zeros_in_grad ........................... False
+  log_params_norm ................................. False
+  log_timers_to_tensorboard ....................... False
+  log_validation_ppl_to_tensorboard ............... False
+  log_world_size_to_tensorboard ................... False
+  loss_scale ...................................... None
+  loss_scale_window ............................... 1000
+  lr .............................................. None
+  lr_decay_iters .................................. None
+  lr_decay_samples ................................ None
+  lr_decay_style .................................. linear
+  lr_warmup_fraction .............................. None
+  lr_warmup_iters ................................. 0
+  lr_warmup_samples ............................... 0
+  make_vocab_size_divisible_by .................... 262144
+  mask_prob ....................................... 0.15
+  masked_softmax_fusion ........................... True
+  max_position_embeddings ......................... 2048
+  merge_file ...................................... data/gpt2/gpt2_merges.txt
+  micro_batch_size ................................ 1
+  min_loss_scale .................................. 1.0
+  min_lr .......................................... 0.0
+  mmap_warmup ..................................... False
+  no_async_tensor_model_parallel_allreduce ........ False
+  no_load_optim ................................... True
+  no_load_rng ..................................... True
+  no_persist_layer_norm ........................... True
+  no_save_optim ................................... None
+  no_save_rng ..................................... None
+  num_attention_heads ............................. 40
+  num_channels .................................... 3
+  num_classes ..................................... 1000
+  num_layers ...................................... 50
+  num_layers_per_virtual_pipeline_stage ........... None
+  num_workers ..................................... 2
+  onnx_safe ....................................... None
+  openai_gelu ..................................... False
+  optimizer ....................................... adam
+  override_lr_scheduler ........................... False
+  params_dtype .................................... torch.float16
+  patch_dim ....................................... 16
+  pipeline_model_parallel_size .................... 1
+  pipeline_model_parallel_split_rank .............. None
+  prompts_file .................................... data/alice_in_wonderland.txt
+  query_in_block_prob ............................. 0.1
+  rampup_batch_size ............................... None
+  rank ............................................ 0
+  reset_attention_mask ............................ False
+  reset_position_ids .............................. False
+  retriever_report_topk_accuracies ................ []
+  retriever_score_scaling ......................... False
+  retriever_seq_length ............................ 256
+  sample_rate ..................................... 1.0
+  save ............................................ None
+  save_interval ................................... None
+  scatter_gather_tensors_in_pipeline .............. True
+  seed ............................................ 42
+  seq_length ...................................... 2048
+  sgd_momentum .................................... 0.9
+  short_seq_prob .................................. 0.1
+  split ........................................... 969, 30, 1
+  temperature ..................................... 1.0
+  tensor_model_parallel_size ...................... 1
+  tensorboard_dir ................................. None
+  tensorboard_log_interval ........................ 1
+  tensorboard_queue_size .......................... 1000
+  titles_data_path ................................ None
+  tokenizer_type .................................. GPT2BPETokenizer
+  top_k ........................................... 0
+  top_p ........................................... 0.9
+  train_iters ..................................... None
+  train_samples ................................... None
+  use_checkpoint_lr_scheduler ..................... False
+  use_contiguous_buffers_in_local_ddp ............. True
+  use_cpu_initialization .......................... None
+  use_one_sent_docs ............................... False
+  virtual_pipeline_model_parallel_size ............ None
+  vocab_extra_ids ................................. 0
+  vocab_file ...................................... data/gpt2/gpt2_vocab.json
+  weight_decay .................................... 0.01
+  world_size ...................................... 1
+-------------------- end of arguments ---------------------
+setting number of micro-batches to constant 1
+> building GPT2BPETokenizer tokenizer ...
+ > padded vocab (size: 50257) with 211887 dummy tokens (new size: 262144)
+> initializing torch distributed ...
+> initializing tensor model parallel with size 1
+> initializing pipeline model parallel with size 1
+> setting random seeds to 42 ...
+> initializing model parallel cuda seeds on global rank 0, model parallel rank 0, and data parallel rank 0 with model parallel seed: 2760 and data parallel seed: 42
+> compiling dataset index builder ...
+make: Entering directory '/scr-ssd/deepak/benchmarking_efficiency/megatron_lm/megatron/data'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/scr-ssd/deepak/benchmarking_efficiency/megatron_lm/megatron/data'
+>>> done with dataset index builder. Compilation time: 0.144 seconds
+> compiling and loading fused kernels ...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /scr-ssd/deepak/benchmarking_efficiency/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_upper_triang_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_upper_triang_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /scr-ssd/deepak/benchmarking_efficiency/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /scr-ssd/deepak/benchmarking_efficiency/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /scr-ssd/deepak/benchmarking_efficiency/megatron_lm/megatron/fused_kernels/build/build.ninja...
+Building extension module fused_mix_prec_layer_norm_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_mix_prec_layer_norm_cuda...
+>>> done with compiling and loading fused kernels. Compilation time: 0.907 seconds
+building GPT model ...
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 17084641280
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 1}: 0.041 seconds +- 0.001
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 2}: 0.079 seconds +- 0.002
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 4}: 0.156 seconds +- 0.003
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 8}: 0.312 seconds +- 0.003
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 12}: 0.463 seconds +- 0.003
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 16}: 0.613 seconds +- 0.002
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 24}: 0.920 seconds +- 0.003
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 32}: 1.224 seconds +- 0.003
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 48}: 1.835 seconds +- 0.003
+Runtime for {'num_input_tokens': 1, 'num_output_tokens': 64}: 2.450 seconds +- 0.003
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 1}: 0.043 seconds +- 0.000
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 2}: 0.081 seconds +- 0.000
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 4}: 0.157 seconds +- 0.001
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 8}: 0.311 seconds +- 0.001
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 12}: 0.463 seconds +- 0.003
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 16}: 0.615 seconds +- 0.001
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 24}: 0.924 seconds +- 0.002
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 32}: 1.226 seconds +- 0.002
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 48}: 1.838 seconds +- 0.004
+Runtime for {'num_input_tokens': 16, 'num_output_tokens': 64}: 2.451 seconds +- 0.004
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 1}: 0.040 seconds +- 0.000
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 2}: 0.079 seconds +- 0.001
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 4}: 0.155 seconds +- 0.001
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 8}: 0.308 seconds +- 0.001
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 12}: 0.460 seconds +- 0.001
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 16}: 0.614 seconds +- 0.002
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 24}: 0.920 seconds +- 0.003
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 32}: 1.224 seconds +- 0.002
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 48}: 1.837 seconds +- 0.004
+Runtime for {'num_input_tokens': 32, 'num_output_tokens': 64}: 2.450 seconds +- 0.003
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 1}: 0.041 seconds +- 0.000
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 2}: 0.079 seconds +- 0.000
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 4}: 0.155 seconds +- 0.000
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 8}: 0.308 seconds +- 0.002
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 12}: 0.462 seconds +- 0.002
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 16}: 0.613 seconds +- 0.001
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 24}: 0.918 seconds +- 0.001
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 32}: 1.226 seconds +- 0.002
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 48}: 1.836 seconds +- 0.003
+Runtime for {'num_input_tokens': 64, 'num_output_tokens': 64}: 2.450 seconds +- 0.003
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 1}: 0.042 seconds +- 0.000
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 2}: 0.080 seconds +- 0.000
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 4}: 0.156 seconds +- 0.001
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 8}: 0.309 seconds +- 0.001
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 12}: 0.462 seconds +- 0.002
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 16}: 0.615 seconds +- 0.001
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 24}: 0.920 seconds +- 0.002
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 32}: 1.225 seconds +- 0.003
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 48}: 1.836 seconds +- 0.003
+Runtime for {'num_input_tokens': 128, 'num_output_tokens': 64}: 2.448 seconds +- 0.003
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 1}: 0.053 seconds +- 0.000
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 2}: 0.091 seconds +- 0.000
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 4}: 0.167 seconds +- 0.000
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 8}: 0.320 seconds +- 0.000
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 12}: 0.473 seconds +- 0.001
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 16}: 0.625 seconds +- 0.001
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 24}: 0.932 seconds +- 0.002
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 32}: 1.238 seconds +- 0.002
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 48}: 1.849 seconds +- 0.003
+Runtime for {'num_input_tokens': 192, 'num_output_tokens': 64}: 2.459 seconds +- 0.003
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 1}: 0.057 seconds +- 0.000
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 2}: 0.094 seconds +- 0.001
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 4}: 0.171 seconds +- 0.001
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 8}: 0.323 seconds +- 0.001
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 12}: 0.476 seconds +- 0.001
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 16}: 0.628 seconds +- 0.001
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 24}: 0.934 seconds +- 0.002
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 32}: 1.241 seconds +- 0.002
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 48}: 1.851 seconds +- 0.002
+Runtime for {'num_input_tokens': 256, 'num_output_tokens': 64}: 2.461 seconds +- 0.003
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 1}: 0.077 seconds +- 0.000
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 2}: 0.114 seconds +- 0.000
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 4}: 0.191 seconds +- 0.001
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 8}: 0.343 seconds +- 0.002
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 12}: 0.495 seconds +- 0.001
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 16}: 0.648 seconds +- 0.001
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 24}: 0.953 seconds +- 0.002
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 32}: 1.259 seconds +- 0.002
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 48}: 1.869 seconds +- 0.002
+Runtime for {'num_input_tokens': 320, 'num_output_tokens': 64}: 2.481 seconds +- 0.003
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 1}: 0.081 seconds +- 0.000
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 2}: 0.118 seconds +- 0.000
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 4}: 0.194 seconds +- 0.000
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 8}: 0.347 seconds +- 0.001
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 12}: 0.500 seconds +- 0.001
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 16}: 0.653 seconds +- 0.001
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 24}: 0.958 seconds +- 0.002
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 32}: 1.264 seconds +- 0.002
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 48}: 1.875 seconds +- 0.003
+Runtime for {'num_input_tokens': 384, 'num_output_tokens': 64}: 2.485 seconds +- 0.003
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 1}: 0.096 seconds +- 0.000
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 2}: 0.133 seconds +- 0.000
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 4}: 0.210 seconds +- 0.001
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 8}: 0.362 seconds +- 0.000
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 12}: 0.515 seconds +- 0.001
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 16}: 0.667 seconds +- 0.001
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 24}: 0.971 seconds +- 0.002
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 32}: 1.277 seconds +- 0.002
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 48}: 1.889 seconds +- 0.003
+Runtime for {'num_input_tokens': 428, 'num_output_tokens': 64}: 2.499 seconds +- 0.002
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 1}: 0.096 seconds +- 0.000
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 2}: 0.133 seconds +- 0.000
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 4}: 0.209 seconds +- 0.001
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 8}: 0.362 seconds +- 0.001
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 12}: 0.514 seconds +- 0.001
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 16}: 0.667 seconds +- 0.001
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 24}: 0.973 seconds +- 0.002
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 32}: 1.278 seconds +- 0.002
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 48}: 1.888 seconds +- 0.002
+Runtime for {'num_input_tokens': 472, 'num_output_tokens': 64}: 2.499 seconds +- 0.003
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 1}: 0.098 seconds +- 0.000
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 2}: 0.135 seconds +- 0.000
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 4}: 0.211 seconds +- 0.000
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 8}: 0.364 seconds +- 0.001
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 12}: 0.516 seconds +- 0.001
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 16}: 0.669 seconds +- 0.002
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 24}: 0.974 seconds +- 0.001
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 32}: 1.279 seconds +- 0.002
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 48}: 1.890 seconds +- 0.002
+Runtime for {'num_input_tokens': 512, 'num_output_tokens': 64}: 2.500 seconds +- 0.003
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 1}: 0.118 seconds +- 0.000
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 2}: 0.156 seconds +- 0.000
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 4}: 0.232 seconds +- 0.001
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 8}: 0.384 seconds +- 0.000
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 12}: 0.537 seconds +- 0.001
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 16}: 0.689 seconds +- 0.002
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 24}: 0.994 seconds +- 0.001
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 32}: 1.299 seconds +- 0.002
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 48}: 1.910 seconds +- 0.002
+Runtime for {'num_input_tokens': 576, 'num_output_tokens': 64}: 2.520 seconds +- 0.003
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 1}: 0.122 seconds +- 0.000
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 2}: 0.159 seconds +- 0.001
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 4}: 0.235 seconds +- 0.001
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 8}: 0.388 seconds +- 0.001
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 12}: 0.540 seconds +- 0.001
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 16}: 0.693 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 24}: 0.998 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 32}: 1.305 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 48}: 1.914 seconds +- 0.002
+Runtime for {'num_input_tokens': 640, 'num_output_tokens': 64}: 2.525 seconds +- 0.003
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 1}: 0.146 seconds +- 0.001
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 2}: 0.183 seconds +- 0.001
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 4}: 0.259 seconds +- 0.001
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 8}: 0.412 seconds +- 0.001
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 12}: 0.564 seconds +- 0.002
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 16}: 0.717 seconds +- 0.001
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 24}: 1.023 seconds +- 0.002
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 32}: 1.328 seconds +- 0.002
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 48}: 1.940 seconds +- 0.002
+Runtime for {'num_input_tokens': 704, 'num_output_tokens': 64}: 2.551 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 1}: 0.149 seconds +- 0.000
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 2}: 0.187 seconds +- 0.000
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 4}: 0.263 seconds +- 0.001
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 8}: 0.415 seconds +- 0.001
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 12}: 0.567 seconds +- 0.001
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 16}: 0.720 seconds +- 0.001
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 24}: 1.025 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 32}: 1.331 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 48}: 1.942 seconds +- 0.002
+Runtime for {'num_input_tokens': 768, 'num_output_tokens': 64}: 2.553 seconds +- 0.003
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 1}: 0.168 seconds +- 0.001
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 2}: 0.206 seconds +- 0.001
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 4}: 0.282 seconds +- 0.001
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 8}: 0.434 seconds +- 0.001
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 12}: 0.587 seconds +- 0.001
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 16}: 0.739 seconds +- 0.002
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 24}: 1.044 seconds +- 0.002
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 32}: 1.350 seconds +- 0.003
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 48}: 1.961 seconds +- 0.003
+Runtime for {'num_input_tokens': 832, 'num_output_tokens': 64}: 2.575 seconds +- 0.003
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 1}: 0.172 seconds +- 0.001
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 2}: 0.210 seconds +- 0.001
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 4}: 0.286 seconds +- 0.001
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 8}: 0.438 seconds +- 0.001
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 12}: 0.591 seconds +- 0.001
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 16}: 0.744 seconds +- 0.002
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 24}: 1.049 seconds +- 0.002
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 32}: 1.355 seconds +- 0.002
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 48}: 1.967 seconds +- 0.003
+Runtime for {'num_input_tokens': 896, 'num_output_tokens': 64}: 2.579 seconds +- 0.003
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 1}: 0.188 seconds +- 0.000
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 2}: 0.226 seconds +- 0.000
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 4}: 0.302 seconds +- 0.001
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 8}: 0.454 seconds +- 0.001
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 12}: 0.607 seconds +- 0.001
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 16}: 0.760 seconds +- 0.001
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 24}: 1.065 seconds +- 0.001
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 32}: 1.371 seconds +- 0.003
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 48}: 1.985 seconds +- 0.005
+Runtime for {'num_input_tokens': 960, 'num_output_tokens': 64}: 2.606 seconds +- 0.021
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 1}: 0.192 seconds +- 0.001
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 2}: 0.230 seconds +- 0.000
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 4}: 0.306 seconds +- 0.001
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 8}: 0.458 seconds +- 0.001
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 12}: 0.612 seconds +- 0.004
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 16}: 0.765 seconds +- 0.004
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 24}: 1.071 seconds +- 0.005
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 32}: 1.379 seconds +- 0.009
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 48}: 1.994 seconds +- 0.016
+Runtime for {'num_input_tokens': 1024, 'num_output_tokens': 64}: 2.612 seconds +- 0.020
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 1}: 0.223 seconds +- 0.001
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 2}: 0.260 seconds +- 0.000
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 4}: 0.336 seconds +- 0.000
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 8}: 0.489 seconds +- 0.003
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 12}: 0.642 seconds +- 0.002
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 16}: 0.795 seconds +- 0.006
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 24}: 1.104 seconds +- 0.012
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 32}: 1.406 seconds +- 0.006
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 48}: 2.022 seconds +- 0.012
+Runtime for {'num_input_tokens': 1152, 'num_output_tokens': 64}: 2.639 seconds +- 0.017
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 1}: 0.248 seconds +- 0.001
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 2}: 0.286 seconds +- 0.000
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 4}: 0.362 seconds +- 0.001
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 8}: 0.515 seconds +- 0.002
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 12}: 0.670 seconds +- 0.006
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 16}: 0.820 seconds +- 0.002
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 24}: 1.128 seconds +- 0.007
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 32}: 1.435 seconds +- 0.010
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 48}: 2.047 seconds +- 0.011
+Runtime for {'num_input_tokens': 1280, 'num_output_tokens': 64}: 2.666 seconds +- 0.014
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 1}: 0.279 seconds +- 0.000
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 2}: 0.316 seconds +- 0.001
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 4}: 0.393 seconds +- 0.001
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 8}: 0.545 seconds +- 0.002
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 12}: 0.699 seconds +- 0.003
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 16}: 0.853 seconds +- 0.007
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 24}: 1.158 seconds +- 0.005
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 32}: 1.465 seconds +- 0.011
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 48}: 2.077 seconds +- 0.007
+Runtime for {'num_input_tokens': 1408, 'num_output_tokens': 64}: 2.691 seconds +- 0.017
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 1}: 0.299 seconds +- 0.001
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 2}: 0.337 seconds +- 0.001
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 4}: 0.413 seconds +- 0.001
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 8}: 0.565 seconds +- 0.001
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 12}: 0.717 seconds +- 0.001
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 16}: 0.870 seconds +- 0.001
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 24}: 1.174 seconds +- 0.002
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 32}: 1.479 seconds +- 0.003
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 48}: 2.089 seconds +- 0.003
+Runtime for {'num_input_tokens': 1536, 'num_output_tokens': 64}: 2.699 seconds +- 0.002
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 1}: 0.328 seconds +- 0.001
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 2}: 0.366 seconds +- 0.001
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 4}: 0.442 seconds +- 0.001
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 8}: 0.594 seconds +- 0.001
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 12}: 0.747 seconds +- 0.002
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 16}: 0.899 seconds +- 0.002
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 24}: 1.204 seconds +- 0.001
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 32}: 1.510 seconds +- 0.002
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 48}: 2.120 seconds +- 0.003
+Runtime for {'num_input_tokens': 1664, 'num_output_tokens': 64}: 2.730 seconds +- 0.002
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 1}: 0.352 seconds +- 0.001
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 2}: 0.390 seconds +- 0.001
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 4}: 0.465 seconds +- 0.001
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 8}: 0.618 seconds +- 0.001
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 12}: 0.769 seconds +- 0.001
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 16}: 0.921 seconds +- 0.002
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 24}: 1.226 seconds +- 0.002
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 32}: 1.531 seconds +- 0.002
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 48}: 2.141 seconds +- 0.003
+Runtime for {'num_input_tokens': 1792, 'num_output_tokens': 64}: 2.750 seconds +- 0.003
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 1}: 0.380 seconds +- 0.001
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 2}: 0.418 seconds +- 0.000
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 4}: 0.494 seconds +- 0.001
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 8}: 0.646 seconds +- 0.001
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 12}: 0.798 seconds +- 0.002
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 16}: 0.950 seconds +- 0.002
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 24}: 1.254 seconds +- 0.002
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 32}: 1.560 seconds +- 0.003
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 48}: 2.168 seconds +- 0.002
+Runtime for {'num_input_tokens': 1920, 'num_output_tokens': 64}: 2.778 seconds +- 0.002
