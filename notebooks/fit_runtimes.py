@@ -2,8 +2,6 @@ import json
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-VOCAB_SIZE = 50304
-
 
 def solve_linear_regression(num_output_tokens_and_runtimes,
                             print_r_squared=False):
