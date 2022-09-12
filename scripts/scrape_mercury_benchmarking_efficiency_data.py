@@ -57,11 +57,13 @@ def parse(runs, keys):
 
 def save_per_instance_stats(runs):
     for run in tqdm.tqdm(runs):
+        directory = f"benchmark_output/runs/latest/{run}"
+        if os.path.isdir(directory):
+            continue
         url = f"https://crfm-models.stanford.edu/static/benchmark_output/runs/latest/{run}/per_instance_stats.json"
         r = requests.get(url)
         try:
             stats = json.loads(r.text)
-            directory = f"benchmark_output/runs/latest/{run}"
             os.makedirs(directory, exist_ok=True)
             with open(f"{directory}/per_instance_stats.json", 'w') as f:
                 f.write(r.text)
