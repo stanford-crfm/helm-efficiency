@@ -9,7 +9,7 @@ import time
 import tqdm
 
 BASE_URL = "https://crfm-models.stanford.edu/static/benchmarking.html?runs"
-DELAY = 60
+DELAY = 20
 
 
 def scrape():
