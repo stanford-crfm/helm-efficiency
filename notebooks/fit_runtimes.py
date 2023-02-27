@@ -4,14 +4,17 @@ from sklearn.linear_model import LinearRegression
 
 
 def solve_linear_regression(num_output_tokens_and_runtimes,
-                            print_r_squared=False):
+                            print_r_squared=False, round_results=True):
     X = [[x] for (x, _) in num_output_tokens_and_runtimes]
     Y = [y for (_, y) in num_output_tokens_and_runtimes]
     reg = LinearRegression()
     reg.fit(X, Y)
     if print_r_squared:
         print(f"R^2 score: {reg.score(X, Y):.3f}")
-    return round(reg.coef_[0], 3), round(reg.intercept_, 3)
+    if round_results:
+        return round(reg.coef_[0], 3), round(reg.intercept_, 3)
+    else:
+        return reg.coef_[0], reg.intercept_
 
 
 def compute_best_fit(runtimes, models,
