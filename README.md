@@ -1,8 +1,34 @@
-# Estimating Inference Efficiency using Megatron
+# Cheaply Evaluating Inference Efficiency Metrics for Autoregressive Transformer Models
 
-This repository contains scripts to benchmark and analyze Megatron's text
-generation functionality.
+This repository contains the code used to produce the results in "Cheaply Evaluating
+Inference Efficiency Metrics for Autoregressive Transformer Models", accepted to
+NeurIPS 2023.
 
+This repository has the following structure:
+- `megatron_lm` is a Git sub-module with Megatron-LM checked out to the commit hash
+used in our experiments.
+  - `scripts` contains example scripts to profile models of interest on various prompt sizes
+  and numbers of output tokens.
+  - `logs` contains logfiles of profiling runs on V100 and A100 GPUs for various models.
+
+- `notebooks` contains various IPython notebooks.
+  - `notebooks/fit_runtimes.ipynb` is an IPython notebook that fits a linear regression
+  model to the collected raw runtimes to determine per-model runtime of processing a prompt of a size
+  ($\alpha_p$ in Equation 1) and the per-output-token runtimes ($\beta in Equation 2). These raw runtimes
+  could be measured on a dedicated server deployment, or could be measured using
+  black-box text generation APIs like OpenAI's `davinci` offering (in this repository,
+  we use results from [HELM's synthetic efficiency
+  scenario](https://github.com/stanford-crfm/helm/blob/main/src/helm/benchmark/scenarios/synthetic_efficiency_scenario.py)
+  that allows us to control both the prompt size and the number of output tokens).
+  `fit_runtimes.ipynb` also dumps the learnt parameters into JSON files in `processed_jsons/`. 
+  - The other notebooks in this directory produce visualizations shown in the paper (e.g.,
+  end-to-end runtime versus number of output tokens for different models and prompt sizes,
+  or prompt runtime versus prompt size for different models). These visualizations are
+  collected in `figures/`.
+
+## Using Megatron-LM for autoregressive text generation
+
+We use Megatron-LM in our experiments to generate text.
 
 The main driver program is `generate_text.py`, which instantiates a model
 of the passed-in dimensions, and then generates the desired number of
@@ -27,12 +53,16 @@ following command:
                         Size of the output generated text.
 ```
 
-`scripts` contains some example scripts for various models of interest.
+## Citation
 
-`logs` contains logfiles of experiment runs on V100 and A100 GPUs.
+If you found this repository or our paper useful, feel free to cite our work:
 
-`notebooks/fit_runtimes.ipynb` is an IPython notebook that fits a linear regression
-model to the collected raw runtimes to determine per-model per-output-token
-runtimes as well as the cost of processing a prompt of a given number of
-tokens. `fit_runtimes.ipynb` also dumps these parameters into JSON files
-in `processed_jsons/`.
+```
+@inproceedings{narayanan2023cheaply,
+    title={{Cheaply Estimating Inference Efficiency Metrics for Autoregressive Transformer Models}},
+    author={Deepak Narayanan and Keshav Santhanam and Peter Henderson and Rishi Bommasani and Tony Lee and Percy Liang},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023},
+    url={https://openreview.net/forum?id=RJpAz15D0S}
+}
+```
