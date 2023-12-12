@@ -4,7 +4,7 @@ This repository contains the code used to produce the results in "Cheaply Evalua
 Inference Efficiency Metrics for Autoregressive Transformer Models", accepted to
 NeurIPS 2023.
 
-This repository has the following structure:
+This repository contains the following:
 - `megatron_lm` is a Git sub-module with Megatron-LM checked out to the commit hash
 used in our experiments.
   - `scripts` contains example scripts to profile models of interest on various prompt sizes
